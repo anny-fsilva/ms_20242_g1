@@ -9,34 +9,118 @@ HU-001
 Cadastro de usuários com e-mail institucional
 
 ### **Descrição:**  
-Como **usuário cadastrado**, eu quero **poder me cadastrar utilizando meu e-mail institucional** para que **minha conta esteja vinculada a instituição e possa acessar o sistema**.
+Como **estudante não cadastrado**, eu quero **poder me cadastrar utilizando meu e-mail institucional** para que **minha conta esteja vinculada a instituição e possa acessar o sistema**.
 
 ### **Critérios de Aceitação:**
 #### Cenário 1: Cadastro de usuário 
 - **Dado** que o usuário está na página de cadastro,
-- **Quando** o usuário insere seu nome completo, e-mail institucional e senha,
+- **Quando** o usuário insere seu nome completo, e-mail institucional, nome de usuário e senha,
 - **E** aperta o botão de “cadastrar”,
-- **Então** então o sistema deve criar a conta para o usuário.
+- **Então** então o sistema deve criar a conta para o usuário e ele é direcionado para a página inicial.
 
-#### Cenário 2: Validação de e-mail
+#### Cenário 2: Escolha do nome do usuário com erro 
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário insere seu nome de usuário,
+- **E** e o nome de usuário inserido já foi cadastrado anteriormente por todo usuário,
+- **E** aperta o botão de "cadastrar",
+- **Então** então o sistema deve exibir uma mensagem de que aquele nome de usuário já está sendo usado e o usuário deve escolher outro nome.
+
+#### Cenário 3: Escolha do nome do usuário bem-sucedido
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário insere seu nome de usuário,
+- **E** e o nome de usuário inserido ainda não foi utiizado,
+- **E** aperta o botão de "cadastrar",
+- **Então** então o sistema deve criar a conta para o usuário e ele é direcionado para a página inicial.
+
+#### Cenário 4: Escolha da senha com erro
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário cria uma senha,
+- **E** e essa senha possui menos de 8 caracteres, e não possui letras (maiúsculas ou minúsculas) e números,
+- **E** aperta o botão de "cadastrar",
+- **Então** então o sistema deve exibir uma mensagem de que aquela senha é inválida e ele deve criar outra senha que atenda os requisitos.
+
+#### Cenário 5: Escolha da senha com sucesso
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário cria uma senha,
+- **E** e essa senha possui no mínimo 8 caracteres, e possui letras (maiúsculas ou minúsculas) e números,
+- **E** aperta o botão de "cadastrar",
+- **Então** então o sistema deve criar a conta para o usuário e ele é direcionado para a página inicial.
+
+#### Cenário 6: Validação de e-mail
 - **Dado** que o usuário está na página de cadastro,
 - **Quando** o usuário insere um e-mail institucional que não é institucional,
 - **E** aperta o botão de cadastrar,
 - **Então** então o sistema deve exibir uma mensagem de erro informando que apenas e-mails institucionais são permitidos.
 
-#### Cenário 3: Cadastro bem-sucedido
+#### Cenário 7: Cadastro bem-sucedido
+- **Dado** que o usuário preencheu todos os campos corretamente,
+- **Quando** o usuário aperta o botão de “cadastrar”,
+- **E** o sistema valida que todas as informações estão corretas,
+- **Então** o sistema deve redirecionar o usuário para a página de login com uma mensagem de confirmação de que a conta foi criada com sucesso.
+
+#### Cenário 8: Escolha do tipo de usuário
 - **Dado** que o usuário preencheu todos os campos corretamente,
 - **Quando** o usuário aperta o botão de “cadastrar”,
 - **E** o sistema valida que todas as informações estão corretas,
 - **Então** o sistema deve redirecionar o usuário para a página de login com uma mensagem de confirmação de que a conta foi criada com sucesso.
 
 
+### **ID:**  
+HU-002
+
+### **Título:**  
+Login do usuário
+
+### **Descrição:**  
+Como **usuário cadastrado**, eu quero **acessar a aplicação** para que **utilizar os recursos do aplicativo**.
+
+### **Critérios de Aceitação:**
+#### Cenário 1: Login do usuário com e-mail institucional com sucesso 
+- **Dado** que o usuário está na página de login,
+- **Quando** o usuário insere seu e-mail institucional e senha cadastrados corretamente,
+- **E** aperta o botão de “Entrar”,
+- **Então** então ele é direcionado para a página inicial.
+
+#### Cenário 2: Login do usuário com e-mail institucional com erro  
+- **Dado** que o usuário está na página de login,
+- **Quando** o usuário insere um e-mail institucional não cadastrado ou incorretamente,
+- **E** insire a senha,
+- **E** aperta o botão de “Entrar”,
+- **Então** então o sistema exibe uma mensagem de que o e-mail está incorreto ou não está cadastrado e ele deve inserir os dados novamente.
+
+#### Cenário 3: Login do usuário com nome de usuário com sucesso
+- **Dado** que o usuário está na página de login,
+- **Quando** o usuário insere um nome de usuário e senha cadastrados corretamente,
+- **E** insire a senha,
+- **E** aperta o botão de “Entrar”,
+- **Então** então ele é direcionado para a página inicial.
+
+#### Cenário 3: Login do usuário com nome de usuário com erro  
+- **Dado** que o usuário está na página de login,
+- **Quando** o usuário insere um nome de usuário não cadastrado ou incorretamente,
+- **E** insire a senha,
+- **E** aperta o botão de “Entrar”,
+- **Então** então o sistema exibe uma mensagem de que o nome está incorreto ou não está cadastrado e ele deve inserir os dados novamente.
+
+#### Cenário 4: Login do usuário com senha incorreta 
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário insere o e-mail instituicional ou nome de usuário cadastrados e a senha
+- **E** e a senha está incorreta,
+- **E** aperta o botão de "cadastrar",
+- **Então** então o sistema deve exibir uma mensagem de que aquela senha está incorreta e ele deve inserir os dados novamente.
+
+#### Cenário 4: Login do usuário com senha correta 
+- **Dado** que o usuário está na página de cadastro,
+- **Quando** o usuário insere o e-mail instituicional ou nome de usuário cadastrados e a senha;
+- **E** e a senha está correta,
+- **E** aperta o botão de "cadastrar",
+- **Então** então ele é direcionado para a página inicial.
 
 
 ## **História de Usuário**
 
 ### **ID:**  
-HU-002
+HU-003
 
 ### **Título:**  
 Visualização de Aulas Ofertadas
@@ -64,7 +148,7 @@ Como **usuário cadastrado**, eu quero **poder visualizar uma lista com as maté
 ## **História de Usuário**
 
 ### **ID:**  
-HU-003
+HU-004
 
 ### **Título:**  
 Agendamento de Aulas
@@ -104,7 +188,7 @@ Como **usuário cadastrado**, eu quero **selecionar um horário disponível no c
 ## **História de Usuário**
 
 ### **ID:**  
-HU-004
+HU-005
 
 ### **Título:**  
 Sistema de busca com filtros para graduação, matérias e unidades(?)
@@ -150,7 +234,7 @@ Como **usuário do sistema**, eu quero **poder buscar monitorias utilizando filt
 ## **História de Usuário**
 
 ### **ID:**  
-HU-005
+HU-006
 
 ### **Título:**  
 Cadastro como mentor em matéria
@@ -185,7 +269,7 @@ Como **usuário cadastrado**, eu quero **poder realizar um cadastro como mentor 
 ## **História de Usuário**
 
 ### **ID:**  
-HU-006
+HU-007
 
 ### **Título:**  
 Avaliação de mentoria
@@ -205,7 +289,7 @@ Como **usuário cadastrado**, eu quero **poder avaliar a aula e o monitor com qu
 ## **História de Usuário**
 
 ### **ID:**  
-HU-007
+HU-008
 
 ### **Título:**  
 Visualizar ranking de mentores
@@ -242,7 +326,7 @@ Como **usuário cadastrado**, eu quero **visualizar uma página com os ranking d
 ## **História de Usuário**
 
 ### **ID:**  
-HU-008
+HU-009
 
 ### **Título:**  
 Chat para comunicação entre aluno e mentor
