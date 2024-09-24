@@ -8,15 +8,12 @@ SAGRES
 A Escola de Sagres foi um centro de navegação e conhecimento no século XV, que impulsionou as grandes descobertas marítimas portuguesas. Inspirado por esse legado, o aplicativo Sagres conecta alunos para compartilhar conhecimento.
 
 ### Problema
-Descrever o projeto
+A dificuldade de comparecer às monitorias organizadas pela universidade pode ser um empecilho para estudantes de baixo rendimento.
 
 ### Objetivos da Solução
 Sistema que possibilita a conexão entre estudantes da UFG, através de cadastro com e-mail institucional, para a “contratação” de aulas particulares sobre determinadas matérias ou conteúdos específico;
-
 Qualquer aluno pode ensinar;
-
 As aulas podem ser dadas em qualquer hora e dia, pois o monitor quem monta seu horário;
-
 A plataforma pode ser acessada de qualquer lugar.
 
 ### Grupo
@@ -24,11 +21,11 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
-|202201689|ANA LUISA|[<usuario_github>](https://github.com/<usuario_github>)|
-|202300194|GABRIEL|[<usuario_github>](https://github.com/<usuario_github>)|
-|202406173|JULIA DE SOUZA NASCIMENTO|[<jusouzn>](https://github.com/<jusouzn>)|
-|202204842|LEANY|[<usuario_github>](https://github.com/<usuario_github>)|
-|202004771|VERONICA|[<usuario_github>](https://github.com/<usuario_github>)|
+|202403059|ANA LUISA SILVA GONÇALVES|[<AnaLuisa1016>](https://github.com/AnaLuisa1016>)|
+|202403072|GABRIEL RODRIGUES DA SILVA |[GGabrielRodrigues](https://github.com/GGabrielRodrigues)|
+|202406173|JÚLIA DE SOUZA NASCIMENTO|[<jusouzn>](https://github.com/jusouzn)|
+|202206158|LEANY SILVA FIGUEREDO|[<anny.fsilva>](https://github.com/anny.fsilva)|
+|202403096|VERÔNICA RIBEIRO OLIVEIRA PALMEIRA [<Veronicapalmeira>](https://github.com/Veronicapalmeira)|
 
 ### Backlog do Produto
 
