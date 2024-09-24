@@ -26,7 +26,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 |---|---|---|
 |202201689|ANA LUISA|[<usuario_github>](https://github.com/<usuario_github>)|
 |202300194|GABRIEL|[<usuario_github>](https://github.com/<usuario_github>)|
-|202406173|JULIA DE SOUZA NASCIMENTO|[<jusouzn>](https://github.com/jusouzn)|
+|202406173|JULIA DE SOUZA NASCIMENTO|[<jusouzn>](https://github.com/<jusouzn>)|
 |202204842|LEANY|[<usuario_github>](https://github.com/<usuario_github>)|
 |202004771|VERONICA|[<usuario_github>](https://github.com/<usuario_github>)|
 
