@@ -81,7 +81,6 @@ Como **usuário cadastrado**, eu quero **selecionar um horário disponível no c
 - **E** selecionar o tipo de aula,
 - **Então**, o sistema deve enviar a solicitação de agendamento por uma notificação ao mentor.
 
-### **Critérios de Aceitação:**
 #### Cenário 2: Tentativa de agendar horário já ocupado
 - **Dado** que o usuário está logado na plataforma,
 - **Quando** ele acessar a página de perfil do mentor,
@@ -90,11 +89,16 @@ Como **usuário cadastrado**, eu quero **selecionar um horário disponível no c
 - **E** selecionar o tipo de aula,
 - **Então**, o sistema deve exibir uma mensagem de erro informando que o horário não está disponível.
 
-### **Critérios de Aceitação:**
 #### Cenário 3: Notificação de confirmação de agendamento
 - **Dado** que o usuário agendou uma aula com sucesso,
 - **Quando** o agendamento é confirmado,
 - **Então**, o sistema deve notificar na plataforma confirmando o agendamento.
+
+#### Cenário 4: Notificação de cancelamento de agendamento
+- **Dado** que o usuário agendou uma aula com sucesso,
+- **Mas** o agendamento é cancelado pelo mentor,
+- **Então**, o sistema deve notificar na plataforma o cancelamento do agendamento.
+
 
 
 ## **História de Usuário**
