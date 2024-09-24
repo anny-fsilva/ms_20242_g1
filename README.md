@@ -8,7 +8,7 @@ Sagres
 
 ### Descrição:
 
-abubublé
+O projeto consiste em um sistema que possibilita a conexão entre estudantes da UFG para a “contratação” de aulas particulares, remuneradas de acordo com os limites da plataforma e a vontade dos mentores, sobre determinadas matérias ou conteúdos específicos.
 
 ### Problema
 
@@ -23,13 +23,13 @@ Descrever os objetivos da solução
 Este projeto será desenvolvido pelos componentes do grupo 1:
 
 
-| Matrícula | Nome                                                                                         | Usuário Git                                              |
-| ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 202403059  | ANA LUISA SILVA GONÇALVES                                                                   | [<AnaLuisa1016>](https://github.com/AnaLuisa1016>)        |
-| 202403072  | GABRIEL RODRIGUES DA SILVA                                                                   | [GGabrielRodrigues](https://github.com/GGabrielRodrigues) |
-| 202406173  | JÚLIA DE SOUZA NASCIMENTO                                                                   | [<jusouzn>](https://github.com/jusouzn)                   |
-| 202206158  | LEANY SILVA FIGUEREDO                                                                        | [](https://github.com/anny.fsilva)                        |
-| 202403096  | VERÔNICA RIBEIRO OLIVEIRA PALMEIRA[<Veronicapalmeira>](https://github.com/Veronicapalmeira) |                                                           |
+| Matrícula | Nome                                | Usuário Git                                              |
+| ---------- | ----------------------------------- | --------------------------------------------------------- |
+| 202403059  | ANA LUISA SILVA GONÇALVES          | [AnaLuisa1016](https://github.com/AnaLuisa1016)           |
+| 202403072  | GABRIEL RODRIGUES DA SILVA          | [GGabrielRodrigues](https://github.com/GGabrielRodrigues) |
+| 202406173  | JÚLIA DE SOUZA NASCIMENTO          | [jusouzn](https://github.com/jusouzn)                     |
+| 202206158  | LEANY SILVA FIGUEREDO               | [anny.fsilva](https://github.com/anny.fsilva)             |
+| 202403096  | VERÔNICA RIBEIRO OLIVEIRA PALMEIRA | [Veronicapalmeira](https://github.com/Veronicapalmeira)   |
 
 ### Backlog do Produto
 
