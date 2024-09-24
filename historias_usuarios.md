@@ -143,3 +143,126 @@ Como **usuário do sistema**, eu quero **poder buscar monitorias utilizando filt
 - **Dado** que o sistema está em funcionamento,
 - **Quando** novas matérias ou cursos de graduação forem adicionadas, 
 - **Então** o sistema deve permitir que essas novas opções sejam filtradas na busca sem comprometer o funcionamento atual.
+## **História de Usuário**
+
+### **ID:**  
+HU-005
+
+### **Título:**  
+Cadastro como mentor em matéria
+
+### **Descrição:**  
+Como **usuário cadastrado**, eu quero **poder realizar um cadastro como mentor de uma matéria disponível no sistema e escolher forma de cobrança** para que **eu possa ajudar outros alunos a aprender e compartilhar meu conhecimento**.
+
+### **Critérios de Aceitação:**
+#### Cenário 1: Cadastro de mentor com sucesso
+- **Dado** que o usuário está logado na plataforma e acessou a seção de cadastro de mentor,
+- **Quando** ele preencher o formulário com as informações necessárias,
+- **E** clicar no botão "Cadastrar",
+- **E** todas as informações fornecidas forem válidas,
+- **Então**, o sistema deve salvar o cadastro e exibir uma mensagem de confirmação.
+
+#### Cenário 2: Cadastro inválido
+- **Dado** que o usuário está logado na plataforma e acessou a seção de cadastro de mentor,
+- **Quando** ele preencher o formulário com as informações necessárias,
+- **E** clicar no botão "Cadastrar",
+- **E** alguma informação fornecida for inválida,
+- **Então**, o sistema deve exibir uma mensagem de erro.
+
+#### Cenário 3: Definição de valor de cobrança inválida
+- **Dado** que o usuário está logado na plataforma e acessou a seção de cadastro de mentor,
+- **Quando** ele preencher o formulário com as informações necessárias,
+- **E** definiu um valor de cobrança fora do padrão disponibilizado pela plataforma,
+- **E** clicar no botão "Cadastrar",
+- **Então**, o sistema deve exibir uma mensagem de erro.
+
+
+
+## **História de Usuário**
+
+### **ID:**  
+HU-006
+
+### **Título:**  
+Avaliação de mentoria
+
+### **Descrição:**  
+Como **usuário cadastrado**, eu quero **poder avaliar a aula e o monitor com quem tive aula** para que **eu possa ajudar outros alunos a escolherem os seus mentores**.
+
+### **Critérios de Aceitação:**
+#### Cenário 1: Avaliação de mentoria com sucesso
+- **Dado** que o usuário está logado na plataforma tenha realizado uma aula com algum mentor,
+- **Quando** ele selecionar histórico de aulas,
+- **E** selecionar uma aula realizada e clicar em “avaliar mentor”,
+- **E** realizar formulário de avaliação do mentor,
+- **Então**, o sistema deve salvar a avaliação e exibir uma mensagem de confirmação de que a avaliação foi registrada com sucesso.
+
+
+## **História de Usuário**
+
+### **ID:**  
+HU-007
+
+### **Título:**  
+Visualizar ranking de mentores
+
+### **Descrição:**  
+Como **usuário cadastrado**, eu quero **visualizar uma página com os ranking de mentores, suas avaliações e se for o caso, ver as avaliações das minhas aulas** para que **eu possa escolher os mentores melhor avaliados e verificar o feedback das minhas aulas**.
+
+### **Critérios de Aceitação:**
+#### Cenário 1: Visualização do ranking de mentores
+- **Dado**  que o usuário está logado na plataforma,
+- **Quando** ele acessar a página de ranking,
+- **Então**, o sistema deve exibir uma lista de mentores organizados por matéria ou curso, de acordo com suas classificações e avaliações.
+
+#### Cenário 2: Visualização do ranking de mentores
+- **Dado**  que o usuário está visualizando o ranking de mentores,
+- **Quando** ele clicar em um mentor específico,
+- **Então**, o sistema deve exibir as avaliações que outros alunos deixaram, com suas respectivas notas e comentários.
+
+#### Cenário 3: Exibição das avaliações deixadas ao usuário
+- **Dado**  que o usuário está visualizando o ranking de mentores e já tenha cadastro como mentor,
+- **Quando** ele clicar em “minha classificação”,
+- **Então**, o sistema deve exibir as avaliações que outros alunos deixaram, com suas respectivas notas e comentários.
+
+#### Cenário 4: Filtros de busca no ranking de mentores
+- **Dado**  que o usuário está visualizando o ranking de mentores,
+- **Quando** ele utilizar os filtros para selecionar uma matéria ou curso específico,
+- **E** selecionar o curso que procura mentoria,
+- **E** selecionar a matéria onde pretende ver as avaliações dos mentores que se cadastraram,
+- **E** clicar em "Aplicar Filtros",
+- **Então**, o sistema deve exibir apenas os mentores que atendem aos critérios filtrados.
+
+
+
+## **História de Usuário**
+
+### **ID:**  
+HU-008
+
+### **Título:**  
+Chat para comunicação entre aluno e mentor
+
+### **Descrição:**  
+Como **aluno e mentor**, eu quero **ter um chat para me comunicar** para que **eu possa fazer perguntas, esclarecer dúvidas e organizar o acompanhamento acadêmico de maneira prática e eficiente**.
+
+### **Critérios de Aceitação:**
+#### Cenário 1: iniciar um chat
+- **Dado** que o aluno ou mentor estão na página de comunicação,
+- **Quando** um deles seleciona o outro para conversar,
+- **Então**, o sistema deve abrir uma janela de chat entre o mentor e o aluno selecionado.
+
+#### Cenário 2: enviar uma mensagem
+- **Dado** que o aluno ou mentor estão em uma conversa no chat,
+- **Quando** um deles digita uma mensagem e aperta o botão de “enviar”,
+- **Então**  o sistema deve enviar a mensagem e exibi-la na conversa.
+
+#### Cenário 3: receber mensagem
+- **Dado** que o aluno ou mentor estão em uma conversa no chat,
+- **Quando** o outro participante envia uma mensagem,
+- **Então**  o sistema deve exibir a mensagem recebida na janela de chat em tempo real.
+
+#### Cenário 4: Histórico de mensagens
+- **Dado** que o aluno ou mentor estão na janela de chat,
+- **Quando** um deles rola para cima na conversa,
+- **Então** o sistema deve mostrar o histórico de mensagens trocadas.
