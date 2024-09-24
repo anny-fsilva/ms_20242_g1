@@ -21,11 +21,11 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
-|202403059|ANA LUISA SILVA GONÇALVES|[<AnaLuisa1016>](https://github.com/AnaLuisa1016>)|
+|202403059|ANA LUISA SILVA GONÇALVES|[AnaLuisa1016](https://github.com/AnaLuisa1016>)|
 |202403072|GABRIEL RODRIGUES DA SILVA |[GGabrielRodrigues](https://github.com/GGabrielRodrigues)|
-|202406173|JÚLIA DE SOUZA NASCIMENTO|[<jusouzn>](https://github.com/jusouzn)|
-|202206158|LEANY SILVA FIGUEREDO|[<anny.fsilva>](https://github.com/anny.fsilva)|
-|202403096|VERÔNICA RIBEIRO OLIVEIRA PALMEIRA [<Veronicapalmeira>](https://github.com/Veronicapalmeira)|
+|202406173|JÚLIA DE SOUZA NASCIMENTO|[jusouzn](https://github.com/jusouzn)|
+|202206158|LEANY SILVA FIGUEREDO|[anny.fsilva](https://github.com/anny.fsilva)|
+|202403096|VERÔNICA RIBEIRO OLIVEIRA PALMEIRA [Veronicapalmeira](https://github.com/Veronicapalmeira)|
 
 ### Backlog do Produto
 
