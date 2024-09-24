@@ -5,7 +5,7 @@ Repositório definido para a manutenção do controle de versão dos artefatos d
 SAGRES
 
 ### Descrição:
-A Escola de Sagres foi um centro de navegação e conhecimento no século XV, que impulsionou as grandes descobertas marítimas portuguesas. Inspirado por esse legado, o aplicativo Sagres conecta alunos para compartilhar conhecimento.
+A Escola de Sagres foi um centro de navegação e conhecimento no século XV, que impulsionou as grandes descobertas marítimas portuguesas. Inspirado por esse legado, o aplicativo Sagres conecta alunos para compartilhar conhecimento. O projeto consiste em um sistema que possibilita a conexão entre estudantes da UFG para a “contratação” de aulas particulares, remuneradas de acordo com os limites da plataforma e a vontade dos mentores, sobre determinadas matérias ou conteúdos específicos.
 
 ### Problema
 A dificuldade de comparecer às monitorias organizadas pela universidade pode ser um empecilho para estudantes de baixo rendimento.
