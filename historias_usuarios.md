@@ -90,21 +90,21 @@ Como **usuário cadastrado**, eu quero **acessar a aplicação** para que **util
 - **E** aperta o botão de “Entrar”,
 - **Então** então ele é direcionado para a página inicial.
 
-#### Cenário 3: Login do usuário com nome de usuário com erro  
+#### Cenário 4: Login do usuário com nome de usuário com erro  
 - **Dado** que o usuário está na página de login,
 - **Quando** o usuário insere um nome de usuário não cadastrado ou incorretamente,
 - **E** insire a senha,
 - **E** aperta o botão de “Entrar”,
 - **Então** então o sistema exibe uma mensagem de que o nome está incorreto ou não está cadastrado e ele deve inserir os dados novamente.
 
-#### Cenário 4: Login do usuário com senha incorreta 
+#### Cenário 5: Login do usuário com senha incorreta 
 - **Dado** que o usuário está na página de cadastro,
 - **Quando** o usuário insere o e-mail instituicional ou nome de usuário cadastrados e a senha
 - **E** e a senha está incorreta,
 - **E** aperta o botão de "cadastrar",
 - **Então** então o sistema deve exibir uma mensagem de que aquela senha está incorreta e ele deve inserir os dados novamente.
 
-#### Cenário 4: Login do usuário com senha correta 
+#### Cenário 6: Login do usuário com senha correta 
 - **Dado** que o usuário está na página de cadastro,
 - **Quando** o usuário insere o e-mail instituicional ou nome de usuário cadastrados e a senha;
 - **E** e a senha está correta,
