@@ -58,11 +58,6 @@ Como **estudante não cadastrado**, eu quero **poder me cadastrar utilizando meu
 - **E** o sistema valida que todas as informações estão corretas,
 - **Então** o sistema deve redirecionar o usuário para a página de login com uma mensagem de confirmação de que a conta foi criada com sucesso.
 
-#### Cenário 8: Escolha do tipo de usuário
-- **Dado** que o usuário preencheu todos os campos corretamente,
-- **Quando** o usuário aperta o botão de “cadastrar”,
-- **E** o sistema valida que todas as informações estão corretas,
-- **Então** o sistema deve redirecionar o usuário para a página de login com uma mensagem de confirmação de que a conta foi criada com sucesso.
 
 
 ### **ID:**  
