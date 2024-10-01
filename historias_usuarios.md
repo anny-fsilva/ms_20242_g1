@@ -186,7 +186,7 @@ Como **usuário cadastrado**, eu quero **selecionar um horário disponível no c
 HU-005
 
 ### **Título:**  
-Sistema de busca com filtros para graduação, matérias e unidades(?)
+Sistema de busca com filtros para graduação, matérias e unidades
 
 ### **Descrição:**  
 Como **usuário do sistema**, eu quero **poder buscar monitorias utilizando filtros por curso de graduação, matérias e unidades** para que **eu possa encontrar rapidamente o que preciso de acordo com as minhas necessidades acadêmicas**.
