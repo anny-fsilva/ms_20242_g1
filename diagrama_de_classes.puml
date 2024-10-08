@@ -1,0 +1,89 @@
+@startuml
+!theme cerulean-outline
+class Usuario {
+    - String nome
+    - String email
+    - String senha
+    - String curso
+    - String periodo
+    - String fotoPerfil
+    - String descricao
+    + cadastrar()
+    + editarPerfil()
+    + excluirConta()
+}
+
+class Monitor {
+    - List<String> materias
+    - Map horariosDisponiveis
+    - Enum tipoMonitoria
+    - Float valorAula
+    - List<Avaliacao> avaliacoes
+    + cadastrarMateria()
+    + editarMateria()
+}
+
+class Aluno {
+    - List<Monitoria> monitorias
+    + buscarMonitoria()
+    + agendarMonitoria()
+}
+
+class Monitoria {
+    - String materia
+    - Date data
+    - Time horario
+    - Enum tipoMonitoria
+    - Float valor
+    - Monitor monitor
+    - Aluno aluno
+    - Chat chat
+    + confirmarMonitoria()
+    + cancelarMonitoria()
+}
+
+class Avaliacao {
+    - Float nota
+    - String comentario
+    - Aluno aluno
+    - Date data
+    + avaliarMonitoria()
+}
+
+class Chat {
+    - List<String> mensagens
+    - Date dataEnvio
+    - Usuario aluno
+    - Usuario monitor
+    + enviarMensagem()
+    + visualizarHistorico()
+}
+
+class Dashboard {
+    - List<Monitoria> monitorias
+    - List<Notificacao> notificacoes
+    - List<Chat> chats
+    + visualizarMonitorias()
+    + verificarNotificacoes()
+}
+
+class Notificacao {
+    - String mensagem
+    - Date data
+    - Boolean lida
+    + enviarNotificacao()
+    + marcarComoLida()
+}
+
+Usuario <|-- Monitor
+Usuario <|-- Aluno
+Monitoria --> "1" Monitor
+Monitoria --> "1" Aluno
+Monitoria --> "1" Chat
+Chat --> "1" Usuario : Aluno
+Chat --> "1" Usuario : Monitor
+Monitoria --> "0..n" Avaliacao
+Dashboard --> "0..n" Monitoria
+Dashboard --> "0..n" Notificacao
+Dashboard --> "0..n" Chat
+@enduml
