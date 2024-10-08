@@ -29,12 +29,14 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 ### Backlog do Produto
 
-1. RF001 - <Descrição do Requisito>.
-2. RF002 - <Descrição do Requisito>.
-3. RF003 - <Descrição do Requisito>.
-4. RF004 - <Descrição do Requisito>.
-5. RF005 - <Descrição do Requisito>.
-6. RF006 - <Descrição do Requisito>.
+1. RF001 - Cadastro dos alunos utilizando o email institucional, curso e o período que cursa, foto de perfil e a criação de nome de usuário, senha e escolha do tipo de usuário:monitor ou aluno.
+2. RF002 - Cadastro dos cursos e das matérias que serão disponibilizadas para monitoria.
+3. RF003 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria.
+4. RF004 - Chat entre monitor e aluno.
+5. RF005 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias.
+6. RF006 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
+7. RF007 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
+8. RF008 - Geração de relatórios mensais para os monitores: análise de procure pelos seu perfil, quantas aulas foram dadas, quanto recebeu por elas e a média de classificação.
 
 ### Requisitos Não Funcionais
 
