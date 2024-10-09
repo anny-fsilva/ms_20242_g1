@@ -29,29 +29,32 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 ### Backlog do Produto
 
-1. RF001 - <Descrição do Requisito>.
-2. RF002 - <Descrição do Requisito>.
-3. RF003 - <Descrição do Requisito>.
-4. RF004 - <Descrição do Requisito>.
-5. RF005 - <Descrição do Requisito>.
-6. RF006 - <Descrição do Requisito>.
+1. RF001 - Cadastro dos alunos utilizando o email institucional, curso e o período que cursa, foto de perfil e a criação de nome de usuário, senha e escolha do tipo de usuário:monitor ou aluno.
+2. RF002 - Cadastro dos cursos e das matérias que serão disponibilizadas para monitoria.
+3. RF003 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria.
+4. RF004 - Chat entre monitor e aluno.
+5. RF005 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias.
+6. RF006 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
+7. RF007 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
+8. RF008 - Geração de relatórios mensais para os monitores: análise de procure pelos seu perfil, quantas aulas foram dadas, quanto recebeu por elas e a média de classificação.
 
 ### Requisitos Não Funcionais
 
-1. RNF001 - Usabilidade: <Descrição do Requisito não Funcional>.
-2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
-3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
-4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
-6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
-7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
+1. RNF001 - Usabilidade: deve haver facilidade no uso .
+2. RNF002 - Usabilidade: mascara de validação nos campos de CPF, email. .
+3. RNF003 - Segurança: Criptografia dos dados bancários e da senha antes de serem armazenadas no banco de dados.
+4. RNF004 - Desempenho: <Descrição do Requisito não Funcional>..
+5. RNF005 - Confiabilidade: <Descrição do Requisito não Funcional>.
+6. RNF006 - Manutenibilidade: <Descrição do Requisito não Funcional>.
+7. RNF007 - Portabilidade: <Descrição do Requisito não Funcional>.
+8. RNF008 - Conectividade: <Descrição do Requisito não Funcional>.
 
 ### Regras de Negócio
-1. RN01 - <Descrição da Regra de Negócio>.
-2. RN02 - <Descrição da Regra de Negócio>.
-3. RN03 - <Descrição da Regra de Negócio>.
-4. RN04 - <Descrição da Regra de Negócio>.
-5. RN05 - <Descrição da Regra de Negócio>.
+1. RN01 - Apenas monitores podem cadastrar aulas no calendários e editá-las.
+2. RN02 - As informações bancárias dos usuários não podem estar disponíveis para outros usuários.
+3. RN03 - O pagamento só irá ocorrer após a realização da monitoria.
+4. RN04 - Cadastro será concluído apenas quando usado o email institucional e todas as informações de login corretas..
+5. RN05 -
 
 ### Modelo Arquitetural
 <Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
@@ -69,14 +72,14 @@ a definir
 
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Concepção|01/09/2024|03/09/2024|Grupo|Concluída|
-|2|Preparação|03/09/2024|24/09/2024|Grupo|Programada|
+|1|Concepção|27/08/2024|03/09/2024|Grupo|Concluída|
+|2|Preparação|03/09/2024|17/09/2024|Grupo|Concluída|
 |3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
 |4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
 |5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
 |6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
 |7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
