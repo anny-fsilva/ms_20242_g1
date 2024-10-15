@@ -73,13 +73,13 @@ a definir
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
 |1|Concepção|27/08/2024|03/09/2024|Grupo|Concluída|
-|2|Preparação|03/09/2024|17/09/2024|Grupo|Concluída|
-|3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Programada|
+|2|Preparação|03/09/2024|10/09/2024|Grupo|Concluída|
+|3|Item(ns) do backlog <x,y,z>|10/09/2024|17/09/2024|Grupo|Programada|
+|4|Item(ns) do backlog <x,y,z>|17/09/2024|01/10/2024|Grupo|Programada|
+|5|Item(ns) do backlog <x,y,z>|01/10/2024|15/10/2024|Grupo|Programada|
+|6|Item(ns) do backlog <x,y,z>|15/10/2024|29/10/2024|Grupo|Programada|
+|7|Item(ns) do backlog <x,y,z>|29/10/2024|12/11/2024|Grupo|Programada|
+|8|Apresentação do Projeto|12/11/2024|26/11/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
