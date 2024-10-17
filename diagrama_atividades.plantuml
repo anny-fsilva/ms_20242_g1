@@ -1,0 +1,57 @@
+@startuml
+start
+
+:Usuário acessa a plataforma;
+
+if (Usuário cadastrado?) then (sim)
+  :Faz login;
+else (não)
+  :Realiza cadastro;
+  :Valida e-mail e senha;
+endif
+
+:Exibe dashboard;
+
+fork
+  :Usuário busca monitoria;
+  :Aplica filtros;
+  if (Monitoria encontrada?) then (sim)
+    :Visualiza monitor e agendamento;
+    :Seleciona horário e tipo de monitoria;
+    :Solicita agendamento;
+  else (não)
+    :Continua buscando;
+  endif
+fork again
+  :Usuário edita perfil;
+  :Adiciona/edita matérias de monitoria;
+  :Define valores e horários;
+  :Edita configurações ou deleta conta;
+fork again
+  :Usuário visualiza ranking de monitores;
+  :Seleciona monitor para mais detalhes;
+end fork
+
+if (Agendamento solicitado?) then (sim)
+  :Monitor recebe notificação;
+  if (Monitor aceita?) then (sim)
+    :Confirmação enviada ao aluno;
+    :Chat habilitado;
+  else (não)
+    :Notificação de rejeição enviada;
+  endif
+endif
+
+:Usuário participa da monitoria;
+
+fork
+  :Avalia monitoria (opcional);
+fork again
+  :Visualiza histórico de aulas;
+  :Edita ou visualiza avaliações;
+fork again
+  :Chat disponível até 1 dia após a aula;
+end fork
+
+stop
+@enduml
