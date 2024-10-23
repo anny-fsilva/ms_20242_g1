@@ -40,20 +40,21 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 ### Requisitos Não Funcionais
 
-1. RNF001 - Usabilidade: <Descrição do Requisito não Funcional>.
-2. RNF002 - Segurança: <Descrição do Requisito não Funcional>..
-3. RNF003 - Desempenho: <Descrição do Requisito não Funcional>..
-4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
-5. RNF005 - Manutenibilidade: <Descrição do Requisito não Funcional>.
-6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
-7. RNF007 - Conectividade: <Descrição do Requisito não Funcional>.
+1. RNF001 - Usabilidade: deve haver facilidade no uso .
+2. RNF002 - Usabilidade: mascara de validação nos campos de CPF, email. .
+3. RNF003 - Segurança: Criptografia dos dados bancários e da senha antes de serem armazenadas no banco de dados.
+4. RNF004 - Desempenho: <Descrição do Requisito não Funcional>..
+5. RNF005 - Confiabilidade: <Descrição do Requisito não Funcional>.
+6. RNF006 - Manutenibilidade: <Descrição do Requisito não Funcional>.
+7. RNF007 - Portabilidade: <Descrição do Requisito não Funcional>.
+8. RNF008 - Conectividade: <Descrição do Requisito não Funcional>.
 
 ### Regras de Negócio
-1. RN01 - <Descrição da Regra de Negócio>.
-2. RN02 - <Descrição da Regra de Negócio>.
-3. RN03 - <Descrição da Regra de Negócio>.
-4. RN04 - <Descrição da Regra de Negócio>.
-5. RN05 - <Descrição da Regra de Negócio>.
+1. RN01 - Apenas monitores podem cadastrar aulas no calendários e editá-las.
+2. RN02 - As informações bancárias dos usuários não podem estar disponíveis para outros usuários.
+3. RN03 - O pagamento só irá ocorrer após a realização da monitoria.
+4. RN04 - Cadastro será concluído apenas quando usado o email institucional e todas as informações de login corretas..
+5. RN05 -
 
 ### Modelo Arquitetural
 <Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
@@ -71,14 +72,14 @@ a definir
 
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Concepção|01/09/2024|03/09/2024|Grupo|Concluída|
-|2|Preparação|03/09/2024|24/09/2024|Grupo|Programada|
+|1|Concepção|27/08/2024|03/09/2024|Grupo|Concluída|
+|2|Preparação|03/09/2024|17/09/2024|Grupo|Concluída|
 |3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
 |4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
 |5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
 |6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
 |7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
