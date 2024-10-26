@@ -1,0 +1,67 @@
+@startuml
+left to right direction
+
+actor Aluno as A
+actor Mentor as M
+actor Visitante as V
+
+package Login/Cadastro{
+(Fazer login) .> (Validar senha) : <<include>>
+(Fazer login\ncomo Mentor) .up.|> (Fazer login) : <<extend>>
+(Fazer login\ncomo Aluno) .up.|> (Fazer login) : <<extend>>
+(Fazer cadastro\ncomo Mentor) .up.|> (Fazer cadastro) : <<extend>>
+(Fazer cadastro\ncomo Aluno) .up.|> (Fazer cadastro) : <<extend>>
+(Fazer cadastro)
+(Fazer login) .left.> (Fazer cadastro) : <<depend>>
+(Fazer cadastro) .left.> (Ter e-mail\ninstitucional): <<depend>>
+}
+V --> (Fazer login)
+V --> (Fazer cadastro)
+
+A --|> V
+M --|> V
+
+package TelaPerfil {
+usecase "Deletar conta" as TP1
+usecase "Editar perfil" as TP2
+usecase "Compartilhar perfil" as TP3
+usecase "Acessar central\n de ajuda" as TP4
+usecase "Sair da conta" as TP5
+usecase "Editar\nconfigurações" as TP6
+}
+
+TP1 ..> (Acessar Perfil): <<extend>>
+TP2 ..> (Acessar Perfil): <<extend>>
+TP3 ..> (Acessar Perfil): <<extend>>
+TP4 ..> (Acessar Perfil): <<extend>>
+TP5 ..> (Acessar Perfil): <<extend>>
+TP6 ..> (Acessar Perfil): <<extend>>
+
+(Acessar Perfil) ..> (Acessar Dashboard): <<extend>>
+
+package BuscarMonitoria {
+usecase "Visualizar monitor\ne agendamento" as BM1
+usecase "Selecionar horário\ne tipo de monitoria" as BM2
+usecase "Solicitar\n agendamento" as BM3
+usecase "Aplicar\nfiltros" as BM4
+}
+
+A -up-> (Acessar Dashboard)
+M -up--> (Acessar Dashboard)
+
+A -up-> (Encontrar\nmonitores/aulas)
+(Encontrar\nmonitores/aulas) .> (Acessar Dashboard): <<depend>>
+(Encontrar\nmonitores/aulas) .left.> BM4: <<depend>>
+BM1 .left.> BM2: <<depend>>
+BM3 .left.> BM1: <<depend>>
+BM2 .left.> BM4: <<depend>>
+
+(Definir valores\ne horários) -u-|> TP6
+(Adicionar\nmatérias de monitoria) -u-|> TP6
+(Editar\nmatérias de monitoria) -u-|> TP6
+M -up-> (Definir valores\ne horários)
+M -up-> (Adicionar\nmatérias de monitoria)
+M -up-> (Editar\nmatérias de monitoria)
+
+@endum
+@enduml
