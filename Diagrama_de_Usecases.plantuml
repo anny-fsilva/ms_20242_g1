@@ -4,6 +4,7 @@ left to right direction
 actor Aluno as A
 actor Mentor as M
 actor Visitante as V
+actor :Banco de Dados: as B
 
 package Login/Cadastro{
 (Fazer login) .> (Validar senha) : <<include>>
@@ -15,9 +16,11 @@ package Login/Cadastro{
 (Fazer login) .left.> (Fazer cadastro) : <<depend>>
 (Fazer cadastro) .left.> (Ter e-mail\ninstitucional): <<depend>>
 }
+
+(Validar senha) .up.. B
+
 V --> (Fazer login)
 V --> (Fazer cadastro)
-
 A --|> V
 M --|> V
 
