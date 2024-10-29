@@ -99,10 +99,10 @@ a definir
 |5|Implementação do item do backlog 1|29/10/2024|05/11/2024|Grupo 1|Programada|
 |5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
 |5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Implementação dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Projeto de Interfaces gráficas do iten do backlog 4 |12/11/2024|19/11/2024||Programada|
+|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024||Programada|
 |5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
-|5|Implementação dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
+|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024||Programada|
 |6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
