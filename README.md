@@ -54,7 +54,6 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 2. RN02 - As informações bancárias dos usuários não podem estar disponíveis para outros usuários.
 3. RN03 - O pagamento só irá ocorrer após a realização da monitoria.
 4. RN04 - Cadastro será concluído apenas quando usado o email institucional e todas as informações de login corretas..
-5. RN05 -
 
 ### Modelo Arquitetural
 <Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
@@ -89,36 +88,21 @@ a definir
 |2|Definição do Backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
 |2|Descrição dos itens do backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
 |1|Distribuição dos itens do backlog entre as iterações|03/09/2024|10/09/2024|Grupo 1|Concluída|
-|1|Especificação de estórias de usuários dos Item(ns) do backlog 1 ao 7|13/09/2024|24/19/2024||Concluída|
-|3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de persistência dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Implementação dos itens do backlog <x,y,z>*|28/09/2024|11/10/2024||Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de classes dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de persistência dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Implementação dos itens do backlog <x,y,z>*|12/10/2024|25/10/2024||Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de classes dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Implementação dos itens do backlog <x,y,z>*|26/10/2024|08/11/2024||Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de classes dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de persistência dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Implementação dos itens do backlog <x,y,z>*|09/11/2024|22/11/2024||Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de classes dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de persistência dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Implementação dos itens do backlog <x,y,z>*|23/11/2024|06/12/2024||Programada|
+|1|Especificação de estórias de usuários dos Item(ns) do backlog|13/09/2024|24/19/2024|Grupo 1|Concluída|
+|2|Diagrama de classes dos Item(ns) do backlog 1 ao 5 |24/09/2024|08/10/2024|Júlia Souza|Concluída|
+|2|Projeto de Interfaces gráficas dos itens do backlog 1 ao 2 no Figma|24/09/2024|08/10/2024|Verônica Ribeiro|Concluída|
+|3|Diagrama atividades dos itens do backlog 1 ao 5|08/10/2024|15/10/2024|Júlia Souza|Concluída|
+|3|Projeto de Interfaces gráficas dos itens do backlog 3 ao 5 no Figma|08/10/2024|22/10/2024|Verônica Ribeiro|Concluída|
+|4|Diagrama de casos de uso dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
+|4|Diagrama de sequência dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
+|4|Projeto de persistência dos itens do backlog 1 |22/10/2024|29/10/2024|Júlia Rodrigues e Leany Figueredo |Programada|
+|5|Implementação do item do backlog 1|29/10/2024|05/11/2024|Grupo 1|Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Implementação dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Projeto de Interfaces gráficas do iten do backlog 4 |12/11/2024|19/11/2024||Programada|
+|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
+|5|Implementação dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
 |6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
