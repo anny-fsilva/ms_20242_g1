@@ -89,7 +89,7 @@ a definir
 |2|Definição do Backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
 |2|Descrição dos itens do backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
 |1|Distribuição dos itens do backlog entre as iterações|03/09/2024|10/09/2024|Grupo 1|Concluída|
-|1|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|13/09/2024|24/19/2024||Concluída|
+|1|Especificação de estórias de usuários dos Item(ns) do backlog 1 ao 7|13/09/2024|24/19/2024||Concluída|
 |3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
 |3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
 |3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
