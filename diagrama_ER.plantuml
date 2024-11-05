@@ -1,0 +1,80 @@
+@startuml
+' Configuração para evitar problemas de visualização nas conexões
+skinparam linetype ortho
+
+' Entidade Usuario
+entity "Usuario" as e01 {
+  *usuario_id : number <<generated>>
+  --
+  *nome : text
+  *email_institucional : text
+  senha : text
+  skills : text
+  periodo : integer
+  curso : text
+  bio : text
+  data_nascimento : data
+}
+
+' Entidade Monitoria
+entity "Monitoria" as e02 {
+  *monitoria_id : number <<generated>>
+  --
+  *materia : text
+  descricao : text
+  preco : decimal
+  horario : datetime
+  tipo : text
+  duracao : integer
+  dias : text
+  turno : text
+  *monitor_id : number <<FK>>  ' Relacionado ao usuario_id do monitor
+}
+
+' Entidade Agendamento
+entity "Agendamento" as e03 {
+  *agendamento_id : number <<generated>>
+  --
+  *monitoria_id : number <<FK>>
+  *aluno_id : number <<FK>>
+  horario : datetime
+  dia : text
+  confirmacao : boolean
+}
+
+' Entidade Avaliacao
+entity "Avaliacao" as e04 {
+  *avaliacao_id : number <<generated>>
+  --
+  *agendamento_id : number <<FK>>
+  *avaliador_id : number <<FK>>
+  pontuacao : integer
+  comentario : text
+}
+
+' Entidade Chat
+entity "Chat" as e05 {
+  *chat_id : number <<generated>>
+  --
+  *agendamento_id : number <<FK>>
+  mensagem : text
+  data_hora : datetime
+}
+
+' Entidade Transacao
+entity "Transacao" as e06 {
+  *transacao_id : number <<generated>>
+  --
+  *agendamento_id : number <<FK>>
+  valor : decimal
+  status_pagamento : text
+}
+
+' Relacionamentos entre as entidades
+e01 }|--o{ e02 : "pode criar monitoria se for monitor"
+e01 }|--o{ e03 : "aluno"
+e02 ||--o{ e03 : "tem agendamento"
+e03 ||--o{ e04 : "tem avaliacao"
+e03 ||--o{ e05 : "tem chat"
+e03 ||--o{ e06 : "tem transacao"
+@enduml
