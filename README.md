@@ -47,11 +47,12 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 1. RNF001 - Usabilidade: deve haver facilidade no uso .
 2. RNF002 - Usabilidade: mascara de validação nos campos de CPF, email. .
 3. RNF003 - Segurança: Criptografia dos dados bancários e da senha antes de serem armazenadas no banco de dados.
-4. RNF004 - Desempenho: <Descrição do Requisito não Funcional>..
-5. RNF005 - Confiabilidade: <Descrição do Requisito não Funcional>.
-6. RNF006 - Manutenibilidade: <Descrição do Requisito não Funcional>.
-7. RNF007 - Portabilidade: <Descrição do Requisito não Funcional>.
-8. RNF008 - Conectividade: <Descrição do Requisito não Funcional>.
+4. RNF004 - Desempenho: Deve suportar o acesso de 1/5 dos usuários em períodos de alta demanda, como semanas de prova final.
+5. RNF005 - Confiabilidade: Backups semanais para que monitores não percam dados como feedback de alunos, monitorias dadas, aulas agendadas.
+6. RNF006 - Confiabilidade: Sistema deve estar disponível por 24 horas.
+7. RNF007 - Manutenibilidade: A documentação deve estar completa e ser constantemente atualizada para facilitar na manutenção e atualizações posteriores do sistema.
+8. RNF008 - Portabilidade: Aplicação web, devendo funcionar nos navegadores Google Chrome, Firefox, Safari e Microsoft Edge, nas versões mais recentes.
+9. RNF009 - Conectividade: Dados devem sem sincronuzados em tempo real, de modo que as informações sobre horários e datas disponíveis para monitorias, inscrições, solicitações ao monitor sejam apresentadas aos usuários de modo atualizado e consistente.
 
 ### Regras de Negócio
 1. RN01 - Apenas monitores podem cadastrar aulas no calendários e editá-las.
