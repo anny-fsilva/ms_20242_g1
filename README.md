@@ -38,6 +38,10 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 7. RF007 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias. 
 8. RF008 - Geração de relatórios mensais para os monitores: análise de procure pelos seu perfil, quantas aulas foram dadas, quanto recebeu por elas e a média de classificação.
 
+### Protótipo
+
+(https://www.figma.com/design/PF24xbyrpx6XLS3s2TUh7D/Untitled?node-id=0-1&node-type=canvas&t=JFsdLCugLKjz0sfo-0)
+
 ### Requisitos Não Funcionais
 
 1. RNF001 - Usabilidade: deve haver facilidade no uso .
