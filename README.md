@@ -31,12 +31,16 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 
 1. RF001 - Cadastro dos alunos utilizando o email institucional, curso e o período que cursa, foto de perfil e a criação de nome de usuário, senha e escolha do tipo de usuário:monitor ou aluno.
 2. RF002 - Cadastro dos cursos e das matérias que serão disponibilizadas para monitoria.
-3. RF003 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria.
-4. RF004 - Chat entre monitor e aluno.
-5. RF005 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias.
-6. RF006 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
-7. RF007 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
+3. RF003 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
+4. RF004 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria. 
+5. RF005 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
+6. RF006 - Chat entre monitor e aluno. 
+7. RF007 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias. 
 8. RF008 - Geração de relatórios mensais para os monitores: análise de procure pelos seu perfil, quantas aulas foram dadas, quanto recebeu por elas e a média de classificação.
+
+### Protótipo
+
+(https://www.figma.com/design/PF24xbyrpx6XLS3s2TUh7D/Untitled?node-id=0-1&node-type=canvas&t=JFsdLCugLKjz0sfo-0)
 
 ### Requisitos Não Funcionais
 
@@ -54,72 +58,55 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 2. RN02 - As informações bancárias dos usuários não podem estar disponíveis para outros usuários.
 3. RN03 - O pagamento só irá ocorrer após a realização da monitoria.
 4. RN04 - Cadastro será concluído apenas quando usado o email institucional e todas as informações de login corretas..
-5. RN05 -
 
 ### Modelo Arquitetural
-<Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
+O SAGRES utiliza uma arquitetura baseada em microserviços para permitir escalabilidade e modularidade. A aplicação é dividida em uma camada de front-end e uma de back-end. No front-end, React é utilizado para construir interfaces dinâmicas e interativas, enquanto o back-end é implementado com Java Spring, o que facilita a gestão de autenticação, agendamento e comunicação. A arquitetura adota uma estrutura cliente-servidor, onde o servidor fornece API RESTful para operações, permitindo que o front-end faça chamadas assíncronas e atualize o conteúdo dinamicamente.
 
 ### Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
+O modelo de interfaces gráficas do SAGRES prioriza a experiência do usuário, com design intuitivo para facilitar a navegação de alunos e monitores. As principais interfaces incluem o painel de login/cadastro, dashboard, página de busca e agendamento de monitorias, painel de pagamento, sistema de ranking e avaliações, além de um chat integrado para comunicação direta entre alunos e monitores. A interface é projetada em camadas, com foco em usabilidade, responsividade e acessibilidade para dispositivos móveis e desktops, promovendo uma experiência coesa em toda a plataforma.
 
 ### Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+O SAGRES utiliza o banco de dados relacional PostgreSQL para persistência, com uma estrutura bem definida que armazena informações de usuários, monitorias, pagamentos, avaliações e histórico de aulas. As interações com o banco de dados são feitas diretamente a partir da camada de back-end em Java Spring, usando consultas SQL para garantir flexibilidade e controle sobre as operações de leitura e gravação. Isso permite gerenciar e organizar dados de maneira eficiente, garantindo segurança e consistência nas transações.
 
 ### Local do _Deploy_
-a definir
+Render
 
 ### Cronograma de Desenvolvimento
 
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Concepção|27/08/2024|03/09/2024|Grupo|Concluída|
-|2|Preparação|03/09/2024|17/09/2024|Grupo|Concluída|
-|3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Programada|
+|1|Concepção|27/08/2024|03/09/2024|Grupo 1|Concluída|
+|1|Preparação|03/09/2024|10/09/2024|Grupo 1|Concluída|
+|1|Item do backlog 1 |10/09/2024|17/09/2024|Grupo 1|Programada|
+|2|Item(ns) do backlog 1 |17/09/2024|01/10/2024|Grupo 1|Programada|
+|3|Item(ns) do backlog 1 e 2|01/10/2024|15/10/2024|Grupo 1|Programada|
+|4|Item(ns) do backlog 3 e 4 |15/10/2024|29/10/2024|Grupo 1|Programada|
+|5|Item do backlog 5 |29/10/2024|19/12/2024|Grupo 1|Programada|
+|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo 1|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
-|1|Definição do grupo de trabalho|01/09/2024|03/09/2024|Grupo|Concluída|
-|1|Definição do Tema do Trabalho|01/09/2024|03/09/2024|Grupo|Concluída|
-|2|Definição do Backlog do produto|03/09/2024|10/09/2024|Grupo|Concluída|
-|2|Descrição dos itens do backlog do produto|00/00/2024|00/00/2024|Grupo|Programada|
-|2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
-|2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de persistência dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Implementação dos itens do backlog <x,y,z>*|28/09/2024|11/10/2024||Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de classes dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de persistência dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Implementação dos itens do backlog <x,y,z>*|12/10/2024|25/10/2024||Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de classes dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Implementação dos itens do backlog <x,y,z>*|26/10/2024|08/11/2024||Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de classes dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de persistência dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Implementação dos itens do backlog <x,y,z>*|09/11/2024|22/11/2024||Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de classes dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de persistência dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Implementação dos itens do backlog <x,y,z>*|23/11/2024|06/12/2024||Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|1|Definição do grupo de trabalho|01/09/2024|03/09/2024|Grupo 1|Concluída|
+|1|Definição do Tema do Trabalho|01/09/2024|03/09/2024|Grupo 1|Concluída|
+|2|Definição do Backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
+|2|Descrição dos itens do backlog do produto|03/09/2024|10/09/2024|Grupo 1|Concluída|
+|1|Distribuição dos itens do backlog entre as iterações|03/09/2024|10/09/2024|Grupo 1|Concluída|
+|1|Especificação de estórias de usuários dos Item(ns) do backlog|13/09/2024|24/19/2024|Grupo 1|Concluída|
+|2|Diagrama de classes dos Item(ns) do backlog 1 ao 5 |24/09/2024|08/10/2024|Júlia Souza|Concluída|
+|2|Projeto de Interfaces gráficas dos itens do backlog 1 ao 2 no Figma|24/09/2024|08/10/2024|Verônica Ribeiro|Concluída|
+|3|Diagrama atividades dos itens do backlog 1 ao 5|08/10/2024|15/10/2024|Júlia Souza|Concluída|
+|3|Projeto de Interfaces gráficas dos itens do backlog 3 ao 5 no Figma|08/10/2024|22/10/2024|Verônica Ribeiro|Concluída|
+|4|Diagrama de casos de uso dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
+|4|Diagrama de sequência dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
+|4|Projeto de persistência dos itens do backlog 1 |22/10/2024|29/10/2024|Júlia Rodrigues e Leany Figueredo |Programada|
+|5|Implementação do item do backlog 1|29/10/2024|05/11/2024|Grupo 1|Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
+|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024||Programada|
+|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
+|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024||Programada|
+|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
