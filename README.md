@@ -60,16 +60,16 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 4. RN04 - Cadastro será concluído apenas quando usado o email institucional e todas as informações de login corretas..
 
 ### Modelo Arquitetural
-<Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
+O SAGRES utiliza uma arquitetura baseada em microserviços para permitir escalabilidade e modularidade. A aplicação é dividida em uma camada de front-end e uma de back-end. No front-end, React é utilizado para construir interfaces dinâmicas e interativas, enquanto o back-end é implementado com Java Spring, o que facilita a gestão de autenticação, agendamento e comunicação. A arquitetura adota uma estrutura cliente-servidor, onde o servidor fornece API RESTful para operações, permitindo que o front-end faça chamadas assíncronas e atualize o conteúdo dinamicamente.
 
 ### Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
+O modelo de interfaces gráficas do SAGRES prioriza a experiência do usuário, com design intuitivo para facilitar a navegação de alunos e monitores. As principais interfaces incluem o painel de login/cadastro, dashboard, página de busca e agendamento de monitorias, painel de pagamento, sistema de ranking e avaliações, além de um chat integrado para comunicação direta entre alunos e monitores. A interface é projetada em camadas, com foco em usabilidade, responsividade e acessibilidade para dispositivos móveis e desktops, promovendo uma experiência coesa em toda a plataforma.
 
 ### Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+O SAGRES utiliza o banco de dados relacional PostgreSQL para persistência, com uma estrutura bem definida que armazena informações de usuários, monitorias, pagamentos, avaliações e histórico de aulas. As interações com o banco de dados são feitas diretamente a partir da camada de back-end em Java Spring, usando consultas SQL para garantir flexibilidade e controle sobre as operações de leitura e gravação. Isso permite gerenciar e organizar dados de maneira eficiente, garantindo segurança e consistência nas transações.
 
 ### Local do _Deploy_
-a definir
+Render
 
 ### Cronograma de Desenvolvimento
 
