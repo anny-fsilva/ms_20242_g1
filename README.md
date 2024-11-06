@@ -32,7 +32,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 1. RF001 - Cadastro dos alunos utilizando o email institucional, curso e o período que cursa, foto de perfil e a criação de nome de usuário, senha e escolha do tipo de usuário:monitor ou aluno.
 2. RF002 - Cadastro dos cursos e das matérias que serão disponibilizadas para monitoria.
 3. RF003 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
-4. RF004 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria. 
+4. RF004 - Agendamento interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria. 
 5. RF005 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
 6. RF006 - Chat entre monitor e aluno. 
 7. RF007 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias. 
@@ -81,8 +81,8 @@ Render
 |1|Item do backlog 1 |10/09/2024|17/09/2024|Grupo 1|Programada|
 |2|Item(ns) do backlog 1 |17/09/2024|01/10/2024|Grupo 1|Programada|
 |3|Item(ns) do backlog 1 e 2|01/10/2024|15/10/2024|Grupo 1|Programada|
-|4|Item(ns) do backlog 3 e 4 |15/10/2024|29/10/2024|Grupo 1|Programada|
-|5|Item do backlog 5 |29/10/2024|19/12/2024|Grupo 1|Programada|
+|4|Item(ns) do backlog 3 |15/10/2024|29/10/2024|Grupo 1|Programada|
+|5|Item do backlog 4 |29/10/2024|19/12/2024|Grupo 1|Programada|
 |6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo 1|Programada|
 
 ### Iterações x Atividades
