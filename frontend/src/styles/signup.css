@@ -1,0 +1,249 @@
+/* Impede rolagem global na página */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remove a rolagem de toda a página */
+}
+
+/* Estrutura Principal */
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Impede qualquer tipo de rolagem na página */
+  padding-top: 20px; /* Compensa a altura do cabeçalho */
+}
+
+/* Cabeçalho fino fixo no topo */
+.header {
+  width: 100%;
+  height: 5px; /* Altura reduzida para cabeçalho fino */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-wrapper {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.header .signup-logo {
+  width: 45px;
+  padding-right: 3px;
+  padding-top: 7px;
+}
+
+.header .sagres-text {
+  font-size: 25px;
+  font-family: "Ovo", serif;
+  color: #444B59;
+}
+
+.header .help-link {
+  font-size: 15px;
+  color: #444B59;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+}
+
+/* Estilo uniforme para os links "Entrar" */
+.link-style {
+  font-size: 14px;
+  color: #0D90C6;
+  text-decoration: none;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+
+/* Área de Cadastro */
+.signup-left {
+  background-color: #9FD8FA;
+  flex: 0.5;
+  padding: 380px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif; /* Fonte Overpass para a área de cadastro */
+}
+
+/* Título principal do formulário */
+.signup-left h2 {
+  font-size: 27px;
+  color: #444B59;
+  margin-top: -90px;
+}
+
+/* Texto de orientação para login */
+.signup-left p {
+  font-size: 15px;
+  color: #444B59;
+  margin-top: -5px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+}
+
+/* Estilo dos rótulos dos campos de entrada */
+.signup-form label {
+  font-size: 18px;
+  color: #444B59;
+}
+
+/* Campo de E-mail, Senha e Confirmar Senha */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 13px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+/* Opções de cadastro (Lembre-se de mim) */
+.signup-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.remember-me {
+  font-size: 14px;
+}
+
+.remember-me-text {
+  font-size: 14px;
+}
+
+/* Estilo do botão */
+.signup-button {
+  background-color: #0D90C6;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 13px;
+  margin-top: 15px;
+}
+
+.signup-button:hover {
+  background-color: #45a049;
+}
+
+/* Imagem à direita ajustada ao cabeçalho */
+.signup-right {
+  flex: 0.92;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f8f9fa;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-illustration {
+  width: 100%;
+  padding-top: 30px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  .signup-left {
+    padding: 60px 30px;
+  }
+
+  .signup-right {
+    display: none;
+  }
+
+  .header-wrapper {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .signup-logo {
+    width: 50px;
+  }
+
+  .header .help-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .signup-form label {
+    font-size: 16px;
+  }
+
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    font-size: 16px;
+  }
+
+  .signup-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-left {
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+
+  .signup-left h2 {
+    font-size: 22px;
+  }
+
+  .signup-form {
+    max-width: 100%;
+  }
+
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .signup-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .remember-me-text {
+    font-size: 12px;
+  }
+}
