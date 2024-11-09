@@ -101,7 +101,7 @@ body {
 /* Estilo dos rótulos dos campos de entrada */
 .login-form label {
   font-size: 18px; /* Aumentando o tamanho dos rótulos de e-mail e senha */
-  color: #444B59;
+  color: #2c313a;
 }
 
 /* Campo de E-mail e Senha */
@@ -247,4 +247,81 @@ body {
   .forgot-password {
     font-size: 12px;
   }
+}
+
+/* Fundo escurecido sobre a tela de login */
+.forgot-password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Para ficar acima da tela de login */
+}
+
+/* Caixa centralizada de recuperação de senha */
+.forgot-password-box {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forgot-password-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.forgot-password-box p {
+  font-size: 14px;
+  margin-top: 25px;
+  color: #444B59;
+  margin-bottom: 20px;
+}
+
+.forgot-password-form input[type="email"] {
+  width: 93%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.forgot-password-button {
+  background-color: #0D90C6;
+  color: white;
+  margin-top: 8px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.forgot-password-button:hover {
+  background-color: #45a049;
+}
+
+/* Botão para fechar a tela de recuperação de senha */
+.close-forgot-password {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: -350px;
+  cursor: pointer;
+}
+
+.close-forgot-password:hover {
+  background-color: #ddd;
 }

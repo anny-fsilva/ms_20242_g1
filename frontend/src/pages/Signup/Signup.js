@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/signup.css';  // Estilo da página de cadastro
 
 function Signup() {
+  const [isCourseVisible, setIsCourseVisible] = useState(false);
+  const [isProfileVisible, setIsProfileVisible] = useState(false);
+
+  const handleAdvanceToCourse = () => {
+    setIsCourseVisible(true);
+  };
+
+  const handleAdvanceToProfile = () => {
+    setIsProfileVisible(true);
+    setIsCourseVisible(false);
+  };
+
   return (
     <div className="signup-container">
       {/* Cabeçalho */}
@@ -38,9 +50,51 @@ function Signup() {
             </label>
           </div>
 
-          <button type="submit" className="signup-button">Cadastrar</button>
+          <button type="button" className="signup-button" onClick={handleAdvanceToCourse}>Cadastrar</button>
         </form>
       </div>
+
+      {/* Tela de Curso e Período */}
+      {isCourseVisible && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>QUAL SEU CURSO E EM QUE PERÍODO VOCÊ ESTÁ?</h2>
+            <p>Adicione seu curso e período, respectivamente.</p>
+            
+            <label htmlFor="course">Curso</label>
+            <div className="Couse-container">
+            <input type="course" id="course" placeholder="Engenharia de Software" />
+            </div>
+            <label htmlFor="period">Período</label>
+            <div className="period-container">
+            <input type="period" id="period" placeholder="8º Período" />
+            </div>
+            <button type="button" onClick={handleAdvanceToProfile}>Avançar</button>
+          </div>
+        </div>
+      )}
+
+{isProfileVisible && (
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <h2>ADICIONE UMA FOTO DE PERFIL!</h2>
+      <p>Adicione uma foto para que saibam quem é você.</p>
+      
+      {/* Imagem de perfil de exemplo */}
+      <img src="/exemplo-foto-perfil.jpeg" alt="Foto de Perfil" className="profile-photo-preview" />
+
+      {/* Linha horizontal separadora */}
+      <hr className="divider" />
+
+      {/* Botões alinhados horizontalmente */}
+      <div className="button-group">
+        <button type="button">Escolher foto</button>
+        <button type="button">Tirar foto</button>
+        <button type="button">Pular</button>
+      </div>
+    </div>
+  </div>
+)}
 
       {/* Imagem à Direita */}
       <div className="signup-right">

@@ -101,7 +101,7 @@ body {
 /* Estilo dos rótulos dos campos de entrada */
 .signup-form label {
   font-size: 18px;
-  color: #444B59;
+  color: #2c313a;
 }
 
 /* Campo de E-mail, Senha e Confirmar Senha */
@@ -115,7 +115,7 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Opções de cadastro (Lembre-se de mim) */
@@ -246,4 +246,111 @@ body {
   .remember-me-text {
     font-size: 12px;
   }
+}
+/* Adicionando a sobreposição para as telas modais */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Garantir que esteja acima da tela de cadastro */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  color: #444B59;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #444B59;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-left: -10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  background-color: #0D90C6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+/* Alinhar os rótulos (Curso e Período) mais à esquerda */
+.modal-content label {
+  display: inline-block; /* Garante que o rótulo fique alinhado à esquerda */
+  margin-right: 360px; /* Ajusta a distância entre o rótulo e o input */
+  text-align: left; /* Garante que o rótulo fique alinhado à esquerda */
+  margin-top: 12px;
+}
+
+/* Estilo para a imagem de perfil */
+.profile-photo-preview {
+  width: 200px;
+  height: 180px;
+  margin: 10px ; /* Espaçamento acima e abaixo */
+}
+
+/* Linha horizontal separadora */
+.divider {
+  width: 100%;
+  margin-top:20 px ; /* Espaçamento acima e abaixo da linha */
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 2px ;
+}
+
+/* Alinhamento horizontal dos botões */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #45a049;
 }
