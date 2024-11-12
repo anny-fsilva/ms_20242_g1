@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ms_20242_g1.iml" filepath="$PROJECT_DIR$/.idea/ms_20242_g1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/sagres.iml" filepath="$PROJECT_DIR$/backend/sagres.iml" />
     </modules>
   </component>
 </project>
