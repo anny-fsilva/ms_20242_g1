@@ -1,0 +1,27 @@
+@startuml
+actor Aluno as A
+participant "Sistema" as S
+participant "Banco de Dados" as B
+participant "Notificação" as N
+participant "Mentor" as M
+
+A -> S : Solicitar agendamento
+S -> B : Verificar disponibilidade do horário
+B --> S : Horário disponível
+S -> M : Enviar solicitação de agendamento
+
+alt Se o mentor confirma o agendamento
+    M -> S : Confirmar agendamento
+    S -> B : Atualizar status do agendamento
+    B --> S : Confirmação de atualização
+    S -> N : Notificar aluno sobre a confirmação
+    N --> A : Notificação de agendamento confirmado
+
+else Se o mentor rejeita o agendamento
+    M -> S : Rejeitar agendamento
+    S -> N : Notificar aluno sobre a rejeição
+    N --> A : Notificação de agendamento rejeitado
+
+end
+
+@enduml
