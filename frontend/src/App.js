@@ -25,6 +25,7 @@ import T18 from './pages/Topicos/T18';
 import T19 from './pages/Topicos/T19'; 
 import T20 from './pages/Topicos/T20'; 
 import Dashboard from './pages/Dashboard/Dashboard';
+import Busca from './pages/Busca/Busca';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route path="/topico/Como-o-Sagres-funciona" element={<T19 />} />
           <Route path="/topico/Principais-recursos-do-Sagres" element={<T20 />} />
           <Route path="/dashboard" element={<Dashboard />} /> 
+          <Route path="/busca" element={<Busca />} /> 
         </Routes>
       </div>
     </Router>

@@ -1,0 +1,211 @@
+.dashboard {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 50px);
+  }
+  
+  .greeting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .greeting p {
+    font-size: 20px;
+    color: #444B59;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nova-monitoria-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  
+  .nova-monitoria-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Estilo para as estatísticas */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container das monitorias */
+  .monitorias-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap; /* Permite que os retângulos se ajustem */
+  }
+  
+  .retangulo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%; /* Ajusta a largura de cada retângulo */
+    width: 625px;
+    box-sizing: border-box;
+  }
+  
+  .monitoria-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .monitoria-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -270px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+     gap: 20px;
+  }
+  
+  .monitoria-details {
+    flex: 1;
+    
+  }
+  
+  .monitoria-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #444B59;
+    margin-top: 5px;
+    
+  }
+  
+  .ver-detalhes-btn {
+    background-color: #007bff;
+    color: white;
+  
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 700px;
+    margin-top: -50px;
+  }
+  
+  .ver-detalhes-btn:hover {
+    background-color: #0056b3;
+  }
+  .star-rating {
+    
+    margin-top: -70px;
+   margin-left: 780px;
+    
+    
+  }
+  .star-rating .star {
+    font-size: 18px;  /* Ajuste o tamanho da estrela */
+    color: #ffd700;   /* Cor dourada para a estrela */
+  }
+  /* Media Queries para ajustes em telas menores */
+@media (max-width: 1200px) {
+    .greeting {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nova-monitoria-btn {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        margin-top: 10px;
+    }
+
+    .stats {
+        flex-direction: column; /* Organiza as estatísticas em coluna */
+        gap: 15px;
+    }
+
+    .stat {
+        flex: 1 1 100%; /* Cada estatística ocupa 100% da largura */
+        margin-bottom: 10px;
+    }
+
+    .monitorias-container {
+        flex-direction: column; /* Coloca as monitorias em coluna */
+    }
+
+    .retangulo {
+        width: 100%; /* Retângulos ocupam toda a largura */
+        max-width: none; /* Remove o limite de largura */
+    }
+
+    .monitoria-info {
+        margin-left: 0;
+        flex-direction: column; /* Organiza os itens em coluna */
+    }
+
+    .monitoria-details {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .greeting {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nova-monitoria-btn {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        margin-top: 10px;
+    }
+
+    .stats {
+        flex-direction: column; /* Organiza as estatísticas em coluna */
+        gap: 15px;
+    }
+
+    .stat {
+        flex: 1 1 100%; /* Cada estatística ocupa 100% da largura */
+        margin-bottom: 10px;
+    }
+
+    .monitorias-container {
+        flex-direction: column; /* Coloca as monitorias em coluna */
+    }
+
+    .retangulo {
+        width: 100%; /* Retângulos ocupam toda a largura */
+        max-width: none;
+    }
+
+    .monitoria-info {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .monitoria-details {
+        margin-bottom: 10px;
+    }
+
+    .ver-detalhes-btn {
+        width: 100%; /* Botão ocupa toda a largura */
+        margin-top: 10px;
+    }
+}

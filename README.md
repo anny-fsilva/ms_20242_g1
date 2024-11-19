@@ -1,4 +1,4 @@
-### ds_20242_g1
+### ms_20242_g1
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 1, da Disciplina de Modelagem de Software, no semestre 2024-2.
 
 ### Nome do Projeto:
@@ -39,7 +39,7 @@ Este projeto será desenvolvido pelos componentes do grupo 1:
 7. RF007 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
 =======
 3. RF003 - Barra de pesquisa para encontrar monitores ou a matéria que se pretende agendar uma aula.
-4. RF004 - Calendário interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria. 
+4. RF004 - Agendamento interativo que permite ao aluno escolher o dia da monitoria com determinado monitor, e ao monitor, cadastrar os horários nos dias e das matérias que disponibilizará a monitoria. 
 5. RF005 - Sistema de rankeamento, com base na avaliação dos alunos, para os monitores.
 6. RF006 - Chat entre monitor e aluno. 
 7. RF007 - Cadastramento de informações bancárias para pagamento com cartão de crédito ou pix das taxas das monitorias. 
@@ -99,8 +99,8 @@ Render
 |1|Item do backlog 1 |10/09/2024|17/09/2024|Grupo 1|Programada|
 |2|Item(ns) do backlog 1 |17/09/2024|01/10/2024|Grupo 1|Programada|
 |3|Item(ns) do backlog 1 e 2|01/10/2024|15/10/2024|Grupo 1|Programada|
-|4|Item(ns) do backlog 3 e 4 |15/10/2024|29/10/2024|Grupo 1|Programada|
-|5|Item do backlog 5 |29/10/2024|19/12/2024|Grupo 1|Programada|
+|4|Item(ns) do backlog 3 |15/10/2024|29/10/2024|Grupo 1|Programada|
+|5|Item do backlog 4 |29/10/2024|19/12/2024|Grupo 1|Programada|
 |6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo 1|Programada|
 >>>>>>> main
 
@@ -121,12 +121,12 @@ Render
 |4|Diagrama de sequência dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
 |4|Projeto de persistência dos itens do backlog 1 |22/10/2024|29/10/2024|Júlia Rodrigues e Leany Figueredo |Programada|
 |5|Implementação do item do backlog 1|29/10/2024|05/11/2024|Grupo 1|Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
-|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024||Programada|
-|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo|Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024|Ana Luísa Gonçalves e Verônica Ribeiro|Concluída|
+|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024|Júlia Souza e Leany Figueredo|Programada|
+|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024|Grupo 1|Programada|
+|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024|Ana Luísa Gonçalves e Verônica Ribeiro|Concluída|
+|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024|Júlia Souza e Leany Figueredo|Programada|
+|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024|Grupo 1|Programada|
+|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 1|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.

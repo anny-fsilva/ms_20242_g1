@@ -1,0 +1,349 @@
+/* Estilo para o contêiner principal */
+.busca-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: #F4F7FB;
+    overflow-y: auto;  /* Permite rolagem vertical quando necessário */
+    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+/* Estilo para o campo de busca */
+.busca-input-container {
+    margin-top: 120px; /* Espaço abaixo do cabeçalho ajustado para centralizar */
+    width: 400px;  /* Ajusta o valor conforme o tamanho desejado */
+    display: flex;
+    justify-content: center;
+    margin-left: 425px;
+}
+
+/* Estilo para o input */
+.busca-input {
+    width: 100%;  /* Faz o input ocupar toda a largura disponível */
+    padding: 12px;  /* Aumenta o espaçamento interno */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o ícone de pesquisa */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Estilo para a seção de Mais Populares e Filtros */
+.busca-sections {
+    margin-left: 950px; /* Coloca as caixinhas em posição fixa */
+    top: 200px; /* Distância do topo da página, ajustada conforme necessário */
+    right: 20px; /* Coloca no canto direito da tela */
+    height: 10px;
+    display: flex; /* Alinha as caixinhas horizontalmente */
+    flex-direction: row; /* Alinha as caixinhas lado a lado */
+    gap: 20px; /* Distância entre as caixinhas */
+}
+
+.section-card {
+    width: 100%; /* Faz cada caixinha ocupar toda a largura disponível */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align:center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 111px; /* Limita a largura das caixinhas */
+}
+
+.selected {
+    background-color: rgb(138, 138, 240); /* Muda a cor de fundo para azul quando selecionado */
+    color: white; /* Altera a cor do texto para branco */
+}
+
+/* Hover effect para as caixinhas clicáveis */
+.section-card:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.01); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+.mais-populares p,
+.filtros p {
+    font-size: 16px;
+    color: #444B59;
+    margin-top:-10px ;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Garantindo que o texto dentro da caixinha "Mais Populares" seja branco quando selecionado */
+.selected p {
+    color: white; /* Alterando a cor da fonte para branco quando a caixa for selecionada */
+}
+
+/* Estilo para o <hr /> */
+.divider {
+     margin-top: 60px;/* A linha vai ocupar toda a largura da tela */
+    top: 265px;  /* Ajuste a posição conforme necessário */
+    left: 0;
+    width: 100%; /* Garante que a linha ocupe toda a largura da tela */
+    border: 0;
+    border-top: 0.5px solid #ccc; /* Cor e estilo da linha */
+}
+
+/* Estilo para a lista de monitorias */
+.monitorias-lista {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo para o card de cada monitoria */
+.monitoria-card {
+    display: flex;
+    flex-direction: row; /* Alinha as informações ao lado da foto */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 1240px;
+ 
+    transition: transform 0.3s ease;
+}
+
+.monitoria-card:hover {
+    transform: scale(1.02); /* Efeito de aumento quando passa o mouse */
+}
+
+/* Estilo para a parte superior do card da monitoria */
+.monitoria-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilo para a foto da monitoria */
+.monitoria-foto {
+    width: 220px; /* Aumentei um pouco o tamanho da foto */
+    height: 220px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+/* Estilo para as informações dentro do card */
+.monitoria-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Arial', sans-serif;
+    justify-content: center; /* Centraliza as informações verticalmente */
+}
+
+/* Estilo para as linhas separadoras */
+.monitoria-linhas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.monitoria-linha {
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Estilo para as informações dentro do card */
+.monitoria-disciplina{
+    margin-left: 55px;
+    font-size: 14px;
+    margin-top: -10px;
+    color: #444B59;
+}
+.monitoria-monitor,
+.monitoria-periodo,
+.monitoria-graducao {
+    font-size: 14px;
+    color: #444B59;
+    
+}
+
+.monitoria-estrelas {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+}
+
+.estrela {
+    color: #FFD700; /* Cor amarela para a estrela */
+}
+
+/* Estilo para o preço da monitoria */
+.monitoria-preco {
+    margin-top: 200px;
+    font-size: 16px;
+    margin-left: 650px;
+    font-weight: bold;
+    color: #444B59;
+}
+/* Estilo para o modal de filtros */
+.filter-modal {
+    position: fixed;
+    margin-left: 1100px;
+    margin-top: 167px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+}
+
+/* Estilo para os grupos de filtro */
+.filter-group {
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para os botões de ação */
+.filter-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-actions button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-actions button:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-actions button:first-child {
+    background-color: #ddd;
+}
+
+.filter-actions button:last-child {
+    background-color: #4CAF50;
+    color: white;
+}
+@media screen and (max-width: 1031px) {
+    .busca-input-container {
+        margin-left: 0;
+        width: 80%;
+    }
+    .search-icon {
+        display: none;
+    }
+    .filter-modal {
+        margin-left: 130px; /* Remove o deslocamento para manter centralizado */
+        margin-top: -20px; /* Ajusta o espaço superior */
+        width: 90%; /* Faz o modal ocupar 90% da largura da tela */
+        max-width: 350px; /* Limita a largura máxima */
+        transform: none; /* Remove a transformação para simplificar */
+        left: 5%; /* Centraliza horizontalmente com uma margem */
+        padding: 15px; /* Reduz o espaçamento interno para economizar espaço */
+    }
+    .busca-sections {
+        margin-left: 0;
+        margin-top: 30px;
+        
+        gap: 10px;
+    }
+
+    .monitoria-card {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .monitoria-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    .monitoria-preco {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .filter-modal {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .monitoria-header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsividade para telas pequenas (móveis) */
+@media screen and (max-width: 480px) {
+    .busca-input-container {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .monitoria-card {
+        width: 100%;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .monitoria-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    .monitoria-preco {
+        font-size: 14px;
+    }
+
+    .filter-modal {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .monitoria-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-modal {
+        width: 100%; /* Faz o modal ocupar toda a largura disponível */
+        left: -60px; /* Remove o deslocamento lateral */
+        padding: 10px; /* Ajusta o espaçamento interno */
+        margin-top:-15px; /* Aumenta o espaço do topo */
+    }
+    
+    .filter-actions button {
+        width: 40%; /* Botões ocupam toda a largura */
+        margin-top: 10px; /* Espaçamento entre os botões */
+    }
+
+    .filter-actions {
+         /* Alinha os botões verticalmente */
+        gap: 10px; /* Espaçamento entre os botões */
+    }
+}

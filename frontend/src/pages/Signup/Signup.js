@@ -1,9 +1,27 @@
 import React, { useState } from 'react';
-import '../../styles/signup.css';  // Estilo da página de cadastro
-
+import '../../styles/signup.css'; 
+import axios from '../../services/api'; 
 function Signup() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    course: "",
+    period: "",
+  });
+
   const [isCourseVisible, setIsCourseVisible] = useState(false);
   const [isProfileVisible, setIsProfileVisible] = useState(false);
+
+  // Atualiza os dados do formulário no estado
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleAdvanceToCourse = () => {
     setIsCourseVisible(true);
@@ -12,6 +30,27 @@ function Signup() {
   const handleAdvanceToProfile = () => {
     setIsProfileVisible(true);
     setIsCourseVisible(false);
+  };
+  const handlepularClick = () => {
+    window.location.href = "/dashboard"; // Redireciona para a página /dashboard
+  };
+
+  // Função para salvar os dados no backend ao clicar em "Pular"
+  const handleSkip = async () => {
+    try {
+      const response = await axios.post("/api/usuarios/cadastro", {
+        nome: formData.name,
+        email: formData.email,
+        senha: formData.password,
+        curso: formData.course,
+        periodo: formData.period,
+      });
+      console.log("Dados salvos:", response.data);
+    alert("Cadastro realizado com sucesso!");
+  } catch (error) {
+    console.error("Erro ao salvar os dados:", error.response || error.message);
+    alert(`Não foi possível salvar os dados: ${error.response?.data || error.message}`);
+    }
   };
 
   return (
@@ -32,16 +71,44 @@ function Signup() {
 
         <form className="signup-form">
           <label htmlFor="name">Nome Completo</label>
-          <input type="text" id="name" placeholder="Maria da Silva" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Maria da Silva"
+            value={formData.name}
+            onChange={handleInputChange}
+          />
 
           <label htmlFor="email">E-mail Institucional</label>
-          <input type="email" id="email" placeholder="mariadasilva@discente.ufg.br" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="mariadasilva@discente.ufg.br"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
 
           <label htmlFor="password">Senha</label>
-          <input type="password" id="password" placeholder="*******" />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="*******"
+            value={formData.password}
+            onChange={handleInputChange}
+          />
 
           <label htmlFor="confirmPassword">Confirmar Senha</label>
-          <input type="password" id="confirmPassword" placeholder="*******" />
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="*******"
+            value={formData.confirmPassword}
+            onChange={handleInputChange}
+          />
 
           {/* "Lembre-se de mim" */}
           <div className="signup-options">
@@ -60,41 +127,54 @@ function Signup() {
           <div className="modal-content">
             <h2>QUAL SEU CURSO E EM QUE PERÍODO VOCÊ ESTÁ?</h2>
             <p>Adicione seu curso e período, respectivamente.</p>
-            
+
             <label htmlFor="course">Curso</label>
             <div className="Couse-container">
-            <input type="course" id="course" placeholder="Engenharia de Software" />
+              <input
+                type="text"
+                id="course"
+                name="course"
+                placeholder="Engenharia de Software"
+                value={formData.course}
+                onChange={handleInputChange}
+              />
             </div>
+
             <label htmlFor="period">Período</label>
             <div className="period-container">
-            <input type="period" id="period" placeholder="8º Período" />
+
+              <input
+                type="text"
+                id="period"
+                name="period"
+                placeholder="8º Período"
+                value={formData.period}
+                onChange={handleInputChange}
+              />
             </div>
             <button type="button" onClick={handleAdvanceToProfile}>Avançar</button>
           </div>
         </div>
       )}
 
-{isProfileVisible && (
-  <div className="modal-overlay">
-    <div className="modal-content">
-      <h2>ADICIONE UMA FOTO DE PERFIL!</h2>
-      <p>Adicione uma foto para que saibam quem é você.</p>
-      
-      {/* Imagem de perfil de exemplo */}
-      <img src="/exemplo-foto-perfil.jpeg" alt="Foto de Perfil" className="profile-photo-preview" />
+      {/* Tela de Perfil */}
+      {isProfileVisible && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2>ADICIONE UMA FOTO DE PERFIL!</h2>
+            <p>Adicione uma foto para que saibam quem é você.</p>
 
-      {/* Linha horizontal separadora */}
-      <hr className="divider" />
+            <img src="/exemplo-foto-perfil.jpeg" alt="Foto de Perfil" className="profile-photo-preview" />
+            <hr className="divider" />
 
-      {/* Botões alinhados horizontalmente */}
-      <div className="button-group">
-        <button type="button">Escolher foto</button>
-        <button type="button">Tirar foto</button>
-        <button type="button">Pular</button>
-      </div>
-    </div>
-  </div>
-)}
+            <div className="button-group">
+              <button type="button">Escolher foto</button>
+              <button type="button">Tirar foto</button>
+              <button type="button" onClick={handleSkip}>Pular</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Imagem à Direita */}
       <div className="signup-right">
