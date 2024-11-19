@@ -34,7 +34,7 @@ function Login() {
         <div className="header-wrapper">
           <img src="/logosagres.png" alt="Sagres Logo" className="login-logo" />
           <span className="sagres-text">SAGRES</span>
-          <a href="#help" className="help-link link-style">Central de Ajuda</a>
+          <a href="/centraldeajuda" className="help-link link-style">Central de Ajuda</a>
         </div>
       </div>
 

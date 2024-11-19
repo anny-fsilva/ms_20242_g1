@@ -175,10 +175,11 @@ body {
   .signup-container {
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 80px;
   }
 
   .signup-left {
+    margin-top: 20px;
     padding: 60px 30px;
   }
 
@@ -225,6 +226,7 @@ body {
 
   .signup-left h2 {
     font-size: 22px;
+    margin-top: 20px;
   }
 
   .signup-form {
@@ -353,4 +355,60 @@ body {
 
 .button-group button:hover {
   background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .signup-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup-left {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .signup-right {
+    display: none; /* Remove a imagem no lado direito */
+  }
+  .header .signup-logo {
+    display: none;
+  }
+  
+  .header .sagres-text {
+    display: none;
+  }
+}
+
+@media (max-width: 1034px) {
+  .signup-left {
+    width: 100%;
+    padding: 20px;
+    margin-top: -30px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .signup-left {
+    width: 100%;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .signup-left h2 {
+    font-size: 22px;
+  }
+
+  .signup-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }

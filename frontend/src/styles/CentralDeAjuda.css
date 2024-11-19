@@ -1,0 +1,175 @@
+/* Reset geral */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F4F7FB; /* Cor de fundo da tela de login */
+}
+
+/* Container principal */
+.help-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    padding-top: 20px;
+    background-color: #F4F7FB;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    height: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header-wrapper {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.header .help-logo {
+    width: 45px;
+    padding-right: 3px;
+    padding-top: 7px;
+}
+
+.header .sagres-text {
+    font-size: 25px;
+    font-family: "Ovo", serif;
+    color: #444B59;
+}
+
+.header .help-link {
+    font-size: 15px;
+    color: #444B59;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+}
+
+/* Corpo da página de ajuda */
+.help-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 50px;
+    font-family: 'Overpass', sans-serif;
+    background-color: #F4F7FB;
+}
+
+/* Título */
+.help-body h2 {
+    font-size: 27px;
+    color: #444B59;
+    margin-bottom: -65px;
+    margin-top: 170px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo da barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-input {
+    padding: 15px 50px 15px 15px; /* Adiciona espaço à direita para o ícone */
+    font-size: 16px;
+    width: 460px;
+    max-width: 90%; /* Para telas menores */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.search-icon {
+    position:relative;
+    left: -30px; /* Ícone no lado direito da caixa */
+    margin-top: 18px; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    pointer-events: none; /* Evita que interfira ao clicar na caixa */
+}
+
+/* Explorar tópicos */
+.explore-topics {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.explore-topics p {
+    font-size: 18px;
+    margin-top: 200px;
+    color: #444B59;
+}
+
+.explore-link {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .header {
+        width: 100%;
+        height: 5px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    .header-wrapper {
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .header .help-logo {
+        width: 45px;
+        padding-right: -50px;
+        padding-top: 7px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .header {
+        width: 100%;
+        height: 5px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    .header-wrapper {
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .header .help-logo {
+        width: 45px;
+        padding-right: -50px;
+        padding-top: 7px;
+    }
+    
+}

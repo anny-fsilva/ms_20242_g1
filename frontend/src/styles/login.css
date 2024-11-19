@@ -13,6 +13,7 @@ body {
   font-family: 'Arial', sans-serif;
   overflow: hidden; /* Impede qualquer tipo de rolagem na página */
   padding-top: 20px; /* Compensa a altura do cabeçalho */
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
 }
 
 /* Cabeçalho fino fixo no topo */
@@ -27,41 +28,32 @@ body {
 .header-wrapper {
   background-color: #fff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Garante que os itens fiquem distribuídos */
   align-items: center;
-  padding: 0px;
+  padding: 0 20px; /* Adiciona um pequeno espaçamento interno */
   width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
 }
 
-.header .login-logo {
+.login-logo {
   width: 45px;
-  padding-right: 3px;
-  padding-top: 7px;
+    padding-top: 7px;
+    position: absolute;
+    left: 20px;
 }
 
-.header .sagres-text {
+.sagres-text {
   font-size: 25px;
   font-family: "Ovo", serif;
   color: #444B59;
+  flex: 1; /* Permite que o texto ocupe o espaço restante */
+  margin-left: 5px; /* Espaçamento entre logo e texto */
 }
 
-.header .help-link {
+.help-link {
   font-size: 15px;
   color: #444B59;
-  text-decoration: none;
-  position: absolute;
-  right: 20px;
-}
-
-/* Estilo uniforme para os links "Cadastre-se" e "Esqueceu a senha?" */
-.link-style {
-  font-size: 14px;
-  color: #0D90C6;
-  text-decoration: none;
-}
-
-.link-style:hover {
-  text-decoration: underline;
+ margin-right: -30px; /* Empurra o link para o lado direito */
 }
 
 /* Área de Login */
@@ -73,19 +65,17 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  font-family: 'Overpass', sans-serif; /* Fonte Overpass para a área de login */
+  font-family: 'Overpass', sans-serif;
 }
 
-/* Título principal do formulário */
 .login-left h2 {
-  font-size: 27px; /* Aumentando o tamanho do título */
+  font-size: 27px;
   color: #444B59;
   margin-top: 0px;
 }
 
-/* Texto de orientação para cadastro */
 .login-left p {
-  font-size: 15px; /* Aumentando o tamanho do texto do link de cadastro */
+  font-size: 15px;
   color: #444B59;
   margin-top: -5px;
 }
@@ -98,13 +88,11 @@ body {
   margin-top: 40px;
 }
 
-/* Estilo dos rótulos dos campos de entrada */
 .login-form label {
-  font-size: 18px; /* Aumentando o tamanho dos rótulos de e-mail e senha */
+  font-size: 18px;
   color: #2c313a;
 }
 
-/* Campo de E-mail e Senha */
 .login-form input[type="email"],
 .login-form input[type="password"] {
   width: 100%;
@@ -114,10 +102,9 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-size: 18px; /* Aumentando o tamanho da fonte nos campos de entrada */
+  font-size: 18px;
 }
 
-/* Opções de login (Lembre-se de mim e Esqueceu a senha) */
 .login-options {
   display: flex;
   justify-content: space-between;
@@ -125,21 +112,14 @@ body {
   margin-top: -5px;
 }
 
-/* Estilo do contêiner "Lembre-se de mim" */
 .remember-me {
   font-size: 14px;
 }
 
-/* Classe para o tamanho da fonte do texto "Lembre-se de mim" */
-.remember-me-text {
-  font-size: 14px;
-}
-
-/* Estilo do botão */
 .login-button {
   background-color: #0D90C6;
   color: white;
-  font-size: 18px; /* Aumentando o tamanho da fonte no botão */
+  font-size: 18px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -158,95 +138,17 @@ body {
   align-items: flex-start;
   justify-content: center;
   background-color: #f8f9fa;
-  height: 100vh; /* A altura da imagem será 100% da altura da tela */
+  height: 100vh;
   position: relative;
-  overflow: hidden; /* Remove qualquer rolagem na área da imagem */
+  overflow: hidden;
 }
 
 .login-illustration {
   width: 100%;
   padding-top: 30px;
-  height: 100%; /* Faz a imagem ocupar toda a altura disponível */
-  object-fit: cover; /* A imagem irá cobrir toda a área */
-  object-position: top center; /* A imagem começa exatamente no topo */
-}
-
-/* Responsividade para tablets e dispositivos móveis */
-@media (max-width: 1024px) {
-  .login-container {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px; /* Para compensar o cabeçalho */
-  }
-
-  .login-left {
-    padding: 60px 30px;
-    flex: none;
-  }
-
-  .login-right {
-    display: none; /* Esconde a imagem em tablets e dispositivos menores */
-  }
-
-  .header-wrapper {
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header .login-logo {
-    width: 50px;
-  }
-
-  .header .help-link {
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .login-form label {
-    font-size: 16px;
-  }
-
-  .login-form input[type="email"],
-  .login-form input[type="password"] {
-    font-size: 16px;
-  }
-
-  .login-button {
-    font-size: 16px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .login-left {
-    padding: 40px 20px;
-    font-size: 14px;
-  }
-
-  .login-left h2 {
-    font-size: 22px;
-  }
-
-  .login-form {
-    max-width: 100%;
-  }
-
-  .login-form input[type="email"],
-  .login-form input[type="password"] {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .login-button {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .remember-me-text,
-  .forgot-password {
-    font-size: 12px;
-  }
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 /* Fundo escurecido sobre a tela de login */
@@ -256,14 +158,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2; /* Para ficar acima da tela de login */
+  z-index: 2;
 }
 
-/* Caixa centralizada de recuperação de senha */
 .forgot-password-box {
   background-color: white;
   padding: 20px;
@@ -280,8 +181,6 @@ body {
 
 .forgot-password-box p {
   font-size: 14px;
-  margin-top: 25px;
-  color: #444B59;
   margin-bottom: 20px;
 }
 
@@ -298,7 +197,6 @@ body {
 .forgot-password-button {
   background-color: #0D90C6;
   color: white;
-  margin-top: 8px;
   font-size: 16px;
   padding: 10px;
   border: none;
@@ -311,17 +209,37 @@ body {
   background-color: #45a049;
 }
 
-/* Botão para fechar a tela de recuperação de senha */
-.close-forgot-password {
-  background-color: #f1f1f1;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-right: -350px;
-  cursor: pointer;
-}
+/* Responsividade */
+@media screen and (max-width: 900px) {
+  .login-container {
+    flex-wrap: wrap; /* Permite ajuste para dispositivos menores */
+  }
 
-.close-forgot-password:hover {
-  background-color: #ddd;
+  .login-right {
+    display: none; /* Remove a imagem do lado direito */
+  }
+
+  .login-left {
+    flex: 1; /* A área azul ocupa toda a largura */
+    align-items: center;
+    padding: 80px 20px;
+  }
+
+  .header-wrapper {
+    /* Ajusta o layout do cabeçalho */
+    align-items: center;
+  }
+
+  .sagres-text {
+    display: none;
+  }
+
+  .help-link {
+    font-size: 14px;
+    
+  }
+
+  .login-logo {
+    display: none;
+  }
 }
