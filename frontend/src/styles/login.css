@@ -1,0 +1,255 @@
+/* Impede rolagem global na página */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remove a rolagem de toda a página */
+}
+
+/* Estrutura Principal */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Impede qualquer tipo de rolagem na página */
+  padding-top: 20px; /* Compensa a altura do cabeçalho */
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
+}
+
+/* Cabeçalho fino fixo no topo */
+.header {
+  width: 100%;
+  height: 5px; /* Altura reduzida para cabeçalho fino */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-wrapper {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between; /* Garante que os itens fiquem distribuídos */
+  align-items: center;
+  padding: 0 20px; /* Adiciona um pequeno espaçamento interno */
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+.login-logo {
+  width: 45px;
+    padding-top: 7px;
+    position: absolute;
+    left: 20px;
+}
+
+.sagres-text {
+  font-size: 25px;
+  font-family: "Ovo", serif;
+  color: #444B59;
+  flex: 1; /* Permite que o texto ocupe o espaço restante */
+  margin-left: 5px; /* Espaçamento entre logo e texto */
+}
+
+.help-link {
+  font-size: 15px;
+  color: #444B59;
+ margin-right: -30px; /* Empurra o link para o lado direito */
+}
+
+/* Área de Login */
+.login-left {
+  background-color: #9FD8FA;
+  flex: 0.5;
+  padding: 120px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+.login-left h2 {
+  font-size: 27px;
+  color: #444B59;
+  margin-top: 0px;
+}
+
+.login-left p {
+  font-size: 15px;
+  color: #444B59;
+  margin-top: -5px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+
+.login-form label {
+  font-size: 18px;
+  color: #2c313a;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.remember-me {
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #0D90C6;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  margin-top: 30px;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+/* Imagem à direita ajustada ao cabeçalho */
+.login-right {
+  flex: 0.92;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #f8f9fa;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-illustration {
+  width: 100%;
+  padding-top: 30px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.close-forgot-password{
+  margin-left: 380px;
+  top: 10px; /* Ajuste conforme necessário */
+  right: 10px; /* Ajuste conforme necessário */
+  font-size: 20px; /* Tamanho maior para melhor visibilidade */
+  cursor: pointer; /* Garante que o cursor indique a ação de clique */
+  color: #444B59; /* Altere conforme o design */
+  z-index: 3; /* Deve ser maior que o z-index do fundo */
+  background: none; /* Remove qualquer fundo indesejado */
+  border: none; 
+}
+/* Fundo escurecido sobre a tela de login */
+.forgot-password-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.forgot-password-box {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forgot-password-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.forgot-password-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.forgot-password-form input[type="email"] {
+  width: 93%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.forgot-password-button {
+  background-color: #0D90C6;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.forgot-password-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsividade */
+@media screen and (max-width: 900px) {
+  .login-container {
+    flex-wrap: wrap; /* Permite ajuste para dispositivos menores */
+  }
+
+  .login-right {
+    display: none; /* Remove a imagem do lado direito */
+  }
+
+  .login-left {
+    flex: 1; /* A área azul ocupa toda a largura */
+    align-items: center;
+    padding: 80px 20px;
+  }
+
+  .header-wrapper {
+    /* Ajusta o layout do cabeçalho */
+    align-items: center;
+  }
+
+  .sagres-text {
+    display: none;
+  }
+
+  .help-link {
+    font-size: 14px;
+    
+  }
+
+  .login-logo {
+    display: none;
+  }
+}
