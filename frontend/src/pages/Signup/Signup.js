@@ -70,7 +70,7 @@ function Signup() {
             </div>
             <label htmlFor="period">Período</label>
             <div className="period-container">
-            <input type="period" id="period" placeholder="8º Período" />
+            <input type="period" id="period" placeholder="8" />
             </div>
             <button type="button" onClick={handleAdvanceToProfile}>Avançar</button>
           </div>
