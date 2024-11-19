@@ -87,21 +87,21 @@ Render
 <<<<<<< HEAD
 |1|Concepção|27/08/2024|03/09/2024|Grupo|Concluída|
 |2|Preparação|03/09/2024|17/09/2024|Grupo|Concluída|
-|3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Programada|
+|3|Item 1 do backlog|28/09/2024|11/10/2024|Grupo|Concluída|
+|4|Item 2 do backlog|12/10/2024|25/10/2024|Grupo|Concluída|
+|5|Item 3 do backlog|26/10/2024|08/11/2024|Grupo|Concluída|
+|6|Item 4 do backlog|09/11/2024|22/11/2024|Grupo|Concluída|
+|7|Item 5 do backlog|23/11/2024|06/12/2024|Grupo|Concluída|
+|8|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo|Concluída|
 =======
 |1|Concepção|27/08/2024|03/09/2024|Grupo 1|Concluída|
 |1|Preparação|03/09/2024|10/09/2024|Grupo 1|Concluída|
-|1|Item do backlog 1 |10/09/2024|17/09/2024|Grupo 1|Programada|
-|2|Item(ns) do backlog 1 |17/09/2024|01/10/2024|Grupo 1|Programada|
-|3|Item(ns) do backlog 1 e 2|01/10/2024|15/10/2024|Grupo 1|Programada|
-|4|Item(ns) do backlog 3 |15/10/2024|29/10/2024|Grupo 1|Programada|
-|5|Item do backlog 4 |29/10/2024|19/12/2024|Grupo 1|Programada|
-|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo 1|Programada|
+|1|Item 1 do backlog|10/09/2024|17/09/2024|Grupo 1|Concluída|
+|2|Item 2 do backlog|17/09/2024|01/10/2024|Grupo 1|Concluída|
+|3|Itens 1 e 2 do backlog|01/10/2024|15/10/2024|Grupo 1|Concluída|
+|4|Item 3 do backlog|15/10/2024|29/10/2024|Grupo 1|Concluída|
+|5|Item 4 do backlog|29/10/2024|19/12/2024|Grupo 1|Concluída|
+|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo 1|Concluída|
 >>>>>>> main
 
 ### Iterações x Atividades
