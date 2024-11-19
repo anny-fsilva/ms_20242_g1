@@ -1,0 +1,6 @@
+com\sagres\config\SecurityConfig.class
+com\sagres\service\UsuarioService.class
+com\sagres\repository\UsuarioRepository.class
+com\sagres\model\Usuario.class
+com\sagres\controller\UsuarioController.class
+com\sagres\SagresApplication.class

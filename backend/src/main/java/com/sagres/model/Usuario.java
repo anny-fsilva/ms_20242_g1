@@ -2,6 +2,9 @@ package com.sagres.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class Usuario {
@@ -9,10 +12,19 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
+    @Size(min = 5, max = 50)
     private String nome;
+
     @Column(unique = true, nullable = false)
+    @Email
+    @NotNull
     private String emailInstitucional;
+
+    @NotNull
+    @Size(min = 8, message = "A senha deve ter pelo menos 8 caracteres")
     private String senha;
+
     private String skills;
     private Integer periodo;
     private String curso;
