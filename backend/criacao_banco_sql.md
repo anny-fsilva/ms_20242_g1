@@ -1,4 +1,4 @@
--- Criação da tabela Usuario
+-- tabela Usuario
 CREATE TABLE Usuario (
     usuario_id SERIAL PRIMARY KEY,
     nome TEXT NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE Usuario (
     data_nascimento DATE
 );
 
--- Criação da tabela Monitoria
+-- tabela Monitoria
 CREATE TABLE Monitoria (
     monitoria_id SERIAL PRIMARY KEY,
     materia TEXT NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Monitoria (
     monitor_id INTEGER REFERENCES Usuario(usuario_id) ON DELETE SET NULL
 );
 
--- Criação da tabela Agendamento
+-- tabela Agendamento
 CREATE TABLE Agendamento (
     agendamento_id SERIAL PRIMARY KEY,
     monitoria_id INTEGER REFERENCES Monitoria(monitoria_id) ON DELETE CASCADE,
@@ -35,7 +35,7 @@ CREATE TABLE Agendamento (
     confirmacao BOOLEAN DEFAULT FALSE
 );
 
--- Criação da tabela Avaliacao
+-- tabela Avaliacao
 CREATE TABLE Avaliacao (
     avaliacao_id SERIAL PRIMARY KEY,
     agendamento_id INTEGER REFERENCES Agendamento(agendamento_id) ON DELETE CASCADE,
@@ -44,7 +44,7 @@ CREATE TABLE Avaliacao (
     comentario TEXT
 );
 
--- Criação da tabela Chat
+-- tabela Chat
 CREATE TABLE Chat (
     chat_id SERIAL PRIMARY KEY,
     agendamento_id INTEGER REFERENCES Agendamento(agendamento_id) ON DELETE CASCADE,
@@ -52,7 +52,7 @@ CREATE TABLE Chat (
     data_hora TIMESTAMP NOT NULL
 );
 
--- Criação da tabela Transacao
+-- tabela Transacao
 CREATE TABLE Transacao (
     transacao_id SERIAL PRIMARY KEY,
     agendamento_id INTEGER REFERENCES Agendamento(agendamento_id) ON DELETE CASCADE,
