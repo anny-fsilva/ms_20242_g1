@@ -12,6 +12,11 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
+    @GetMapping("/") 
+    public String home() {
+        return "Bem-vindo à API de usuários!";
+    }
+
     @PostMapping("/cadastro")
     public String cadastrarUsuario(@RequestBody Usuario usuario) {
         try {
