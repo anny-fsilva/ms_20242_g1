@@ -1,0 +1,21 @@
+@startuml
+
+actor Visitante as V
+participant "Sistema" as S
+participant "Banco de Dados" as B
+
+V -> S: Inserir dados de login
+S -> B: Validar e-mail institucional
+B --> S: E-mail válido/inválido
+alt E-mail válido
+    S -> B: Verificar senha
+    B --> S: Senha correta/incorreta
+    alt Senha correta
+        S -> V: Login bem-sucedido
+    else Senha incorreta
+        S -> V: Erro de senha
+    end
+else E-mail inválido
+    S -> V: Erro de e-mail
+end
+@enduml
