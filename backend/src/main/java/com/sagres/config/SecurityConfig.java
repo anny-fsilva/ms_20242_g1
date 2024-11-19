@@ -13,12 +13,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .csrf().disable()
+            .csrf(csrf -> csrf.disable()) 
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/usuarios/cadastro", "/api/usuarios/login").permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll() 
             )
-            .httpBasic();
+            .httpBasic(httpBasic -> httpBasic.realmName("Sagres")); 
+
         return http.build();
     }
 

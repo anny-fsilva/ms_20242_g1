@@ -1,0 +1,164 @@
+/* Container principal */
+.explorar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Corpo da página com rolagem */
+.explorar-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px; /* Espaço para não sobrepor o cabeçalho */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+    max-height: calc(100vh - 50px);
+}
+
+/* Cabeçalho fixo */
+.header {
+    width: 100%;
+    height: 50px; /* Ajuste a altura conforme necessário */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Alinha logo e texto fixos à esquerda */
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    position: relative; /* Necessário para o posicionamento absoluto dos itens */
+}
+
+.header .help-logo {
+    width: 45px;
+    padding-top: 7px;
+    position: absolute;
+    left: 20px; /* Ajuste conforme necessário */
+}
+
+.header .sagres-text {
+    font-size: 25px;
+    font-family: "Ovo", serif;
+    color: #444B59;
+    position: absolute;
+    left: 70px; /* Ajuste conforme necessário para separar da logo */
+}
+
+/* Link 'Central de Ajuda' alinhado à direita */
+.header .help-link {
+    font-size: 15px;
+    color: #444B59;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    right: 50px;
+}
+
+/* Corpo da página */
+.explorar-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px; /* Espaço para não sobrepor o cabeçalho */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Retângulo com tópicos */
+.explorar-item {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Tópico: Cabeçalho (Ícone + Conta e pagamento) */
+.topico-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #444B59;
+    font-weight: bold;
+}
+
+.topico-header .profile-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Linha horizontal */
+.linha-horizontal {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Tópico: Configurações da conta com seta */
+.topico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #444B59;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.seta {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #007BFF;
+}
+.document-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: -10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Estilo da imagem da seta */
+.seta-img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Subtópicos */
+.subtopicos {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.subtopico-link {
+    display: block;
+    font-size: 16px;
+    color: #444B59;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.subtopico-link:hover {
+    color: #0056b3;
+}
+
+.search-container {
+    margin-top: 40px;
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo no container */
+}

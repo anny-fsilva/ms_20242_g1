@@ -1,0 +1,216 @@
+/* Estilos exclusivos para a tela T18 - Por que o Sagres foi criado */
+
+/* Container geral */
+.t18-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #F4F7FC;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto; /* Permite rolagem vertical no conteúdo */
+  max-height: calc(100vh - 50px); 
+  }
+  
+  /* Cabeçalho fixo */
+  .t18-header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .t18-header-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+  }
+  
+  .t18-logo {
+    width: 45px;
+    padding-right: 3px;
+    padding-top: 7px;
+  }
+  
+  .t18-sagres-text {
+    font-size: 25px;
+    font-family: "Ovo", serif;
+    color: #444B59;
+  }
+  
+  .t18-help-link {
+    margin-left: auto;
+    font-size: 15px;
+    color: #444B59;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+  }
+  
+  /* Container da seção de conteúdo */
+  .t18-content {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .t18-article-container {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .t18-article-container h2 {
+    font-size: 25px;
+    color: #444B59;
+    margin-bottom: 15px;
+    margin-top: 2px;
+  }
+  
+  .t18-article-container p {
+    font-size: 20px;
+    color: #444B59;
+    margin-bottom: 10px;
+    margin-top: 2px;
+  }
+  
+  .t18-article-container ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+  }
+  
+  .t18-article-container ul li {
+    font-size: 20px;
+    color: #444B59;
+    margin-bottom: 8px;
+    margin-top: 2px;
+  }
+  
+  /* Linha horizontal acima da seção de feedback */
+  .t18-feedback-line {
+    margin-top: 30px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 2px;
+  }
+  
+  /* Seção de feedback */
+  .t18-feedback-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .t18-feedback-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8px;
+  }
+  
+  /* Botões de feedback */
+  .t18-feedback-button {
+    background-color: #ffffff;
+    color: rgb(49, 43, 65);
+    border-color: #ccc;
+    border-style: double;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .t18-feedback-button.green {
+    background-color: #28a745;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .t18-feedback-button.red {
+    background-color: #dc3545;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .t18-feedback-icon {
+    font-size: 20px;
+  }
+     /* Media Queries para tornar a tela responsiva */
+@media (max-width: 1000px) {
+  .t18-header-wrapper {
+      justify-content: center; /* Centraliza os itens no cabeçalho */
+  }
+
+  .t18-sagres-text {
+      font-size: 20px; /* Reduz o tamanho da fonte */
+  }
+
+  .t18-help-link {
+      font-size: 14px; /* Reduz o tamanho da fonte do link */
+  }
+
+  /* Ajuste da largura do conteúdo */
+  .t18-article-container {
+      margin-left: 20px; /* Ajusta a margem esquerda */
+      max-width: 90%;
+      height: auto; /* Deixa a altura flexível em telas pequenas */
+      padding: 15px;
+  }
+
+  .t18-article-container h2 {
+      font-size: 22px; /* Reduz o tamanho do título */
+  }
+
+  .t18-article-container p {
+      font-size: 18px; /* Reduz o tamanho do parágrafo */
+  }
+
+  .t18-article-container ul li {
+      font-size: 18px; /* Reduz o tamanho dos itens da lista */
+  }
+
+  .t18-feedback-buttons {
+      margin-left: 20px; /* Ajusta os botões para ficarem mais próximos */
+  }
+
+  .t18-feedback-button {
+      font-size: 14px; /* Reduz o tamanho da fonte nos botões */
+      padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajuste para telas ainda menores */
+  .t18-article-container {
+      margin-left: 0; /* Remove a margem esquerda */
+      max-width: 95%;
+      padding: 10px;
+  }
+
+  .t18-sagres-text {
+      font-size: 18px; /* Reduz o tamanho da fonte ainda mais */
+  }
+
+  .t18-feedback-buttons {
+      margin-left: 0;
+  }
+
+  .t18-feedback-button {
+      font-size: 14px; /* Menor fonte nos botões */
+      padding: 4px 7px;
+  }
+}
