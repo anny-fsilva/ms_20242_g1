@@ -150,7 +150,17 @@ body {
   object-fit: cover;
   object-position: top center;
 }
-
+.close-forgot-password{
+  margin-left: 380px;
+  top: 10px; /* Ajuste conforme necessário */
+  right: 10px; /* Ajuste conforme necessário */
+  font-size: 20px; /* Tamanho maior para melhor visibilidade */
+  cursor: pointer; /* Garante que o cursor indique a ação de clique */
+  color: #444B59; /* Altere conforme o design */
+  z-index: 3; /* Deve ser maior que o z-index do fundo */
+  background: none; /* Remove qualquer fundo indesejado */
+  border: none; 
+}
 /* Fundo escurecido sobre a tela de login */
 .forgot-password-overlay {
   position: fixed;

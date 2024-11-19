@@ -31,6 +31,9 @@ function Signup() {
     setIsProfileVisible(true);
     setIsCourseVisible(false);
   };
+  const handlepularClick = () => {
+    window.location.href = "/dashboard"; // Redireciona para a página /dashboard
+  };
 
   // Função para salvar os dados no backend ao clicar em "Pular"
   const handleSkip = async () => {
@@ -139,6 +142,7 @@ function Signup() {
 
             <label htmlFor="period">Período</label>
             <div className="period-container">
+
               <input
                 type="text"
                 id="period"
