@@ -1,0 +1,36 @@
+spring.datasource.url=jdbc:postgresql://<HOST>:<PORT>/<DATABASE>
+spring.datasource.username=<USERNAME>
+spring.datasource.password=<PASSWORD>
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+CREATE DATABASE agenda;
+
+mvn spring-boot:run
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
+heroku login
+
+heroku create <nome-do-seu-app>
+
+heroku addons:create heroku-postgresql:hobby-dev
+
+heroku config
+
+git init
+git add .
+git commit -m "Deploy inicial"
+
+git push heroku main
+
+spring.datasource.url=${DATABASE_URL}
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+
