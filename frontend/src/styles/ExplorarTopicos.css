@@ -114,7 +114,7 @@
     font-size: 18px;
     color: #444B59;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: px;
 }
 
 .seta {
@@ -123,14 +123,15 @@
     font-size: 18px;
     color: #007BFF;
 }
-.document-icon {
-    width: 20px;
-    height: 20px;
-    margin-top: -3px;
-    margin-left: -10px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
+
+  .document-icon {
+        width: 20px;
+        height: 20px;
+        margin-top: -3px;
+        margin-left: -10px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 
 /* Estilo da imagem da seta */
 .seta-img {
@@ -154,6 +155,7 @@
 
 .subtopico-link:hover {
     color: #0056b3;
+    
 }
 
 .search-container {
@@ -161,4 +163,80 @@
     width: 100%; /* Garante que o container ocupe toda a largura disponível */
     display: flex;
     justify-content: center; /* Centraliza o conteúdo no container */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1000px) {
+    /* Ajustes para telas pequenas */
+    .header-wrapper {
+        justify-content: center; /* Espaça o logo e o link "Central de Ajuda" */
+    }
+
+    .header .help-logo {
+        margin-left: 0;
+        left: 20px;
+    }
+    
+    .header .sagres-text {
+        left: 70px;
+        font-size: 20px; /* Diminui o tamanho do texto no cabeçalho */
+    }
+
+    .header .help-link {
+        left: auto;
+        right: 50px;
+        margin-top: 1px;
+    }
+
+    .search-container {
+        margin-top: 60px; /* Ajusta o espaçamento superior */
+        padding: 0 10px; /* Adiciona um pequeno padding lateral */
+        justify-content: center; /* Alinha o conteúdo à esquerda em telas menores */
+    }
+
+    /* Ajustes para os retângulos de tópicos */
+    .explorar-item {
+        max-width: 100%; /* Tópicos ocupam 100% da largura da tela */
+        padding: 15px; /* Reduz o padding para economizar espaço */
+    }
+
+    /* Ajustes para subtópicos */
+    .subtopico-link {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+
+    /* Ajustes para o corpo da página */
+    .explorar-body {
+        padding: 10px; /* Reduz o padding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas */
+    .header .sagres-text {
+        font-size: 18px; /* Diminui ainda mais o texto no cabeçalho */
+    }
+
+    .explorar-item {
+        margin-top: 30px; /* Diminui o espaçamento entre os itens */
+        padding: 10px; /* Diminui o padding */
+    }
+
+    .topico-header {
+        font-size: 18px; /* Diminui o tamanho da fonte dos tópicos */
+    }
+
+    .topico {
+        font-size: 16px; /* Diminui o tamanho da fonte dos tópicos */
+    }
+
+    .subtopico-link {
+        font-size: 14px; /* Diminui o tamanho da fonte dos links */
+    }
+
+    .search-container {
+        margin-top: 40px; /* Ajusta o espaçamento superior */
+        padding: 0 5px; /* Reduz o padding lateral */
+        justify-content: center; /* Centraliza o conteúdo novamente em telas menores */
+    }
 }

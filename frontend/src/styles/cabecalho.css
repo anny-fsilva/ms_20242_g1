@@ -1,0 +1,159 @@
+/* Estilo para o cabeçalho */
+.cabecalho {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* O cabeçalho deve ter um z-index alto para não ser sobreposto por outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Defina uma altura fixa para o cabeçalho */
+}
+
+/* Estilo para o cabeçalho wrapper (contenedor do logo e ícones) */
+.cabecalho-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* Estilo para o logo */
+.cabecalho-logo {
+    width: 45px;
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+/* Estilo para o texto do logo */
+.cabecalho-text {
+    font-size: 25px;
+    font-family: "Ovo", serif;
+    color: #444B59;
+    margin-left: -890px;
+}
+
+/* Estilo para os ícones do cabeçalho */
+.cabecalho-icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+/* Estilo para os ícones */
+.cabecalho-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para os ícones */
+.cabecalho-icon:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para os ícones dentro do cabeçalho */
+.cabecalho-icon i {
+    font-size: 18px;
+    color: #444B59;
+}
+
+/* Estilo para a imagem do perfil */
+.cabecalho-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo para o menu de perfil */
+.perfil-menu {
+    position: absolute;
+    top: 60px; /* Posição abaixo do cabeçalho (ajustado para a altura do cabeçalho) */
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 999; /* Certifique-se de que o menu tenha um z-index menor que o do cabeçalho */
+}
+
+/* Estilo para o cabeçalho do menu de perfil */
+.perfil-menu-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a imagem no menu de perfil */
+.perfil-menu-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Estilo para o nome do usuário no menu */
+.perfil-menu-name {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #444B59;
+}
+
+/* Estilo para o botão de ver perfil */
+.perfil-menu-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Efeito de hover para o botão */
+.perfil-menu-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para as opções do menu de perfil */
+.perfil-menu-options {
+    font-size: 14px;
+    color: #444B59;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para as opções do menu */
+.perfil-menu-options span {
+    display: block;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+/* Efeito de hover para as opções do menu */
+.perfil-menu-options span:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para o separador */
+hr {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+}

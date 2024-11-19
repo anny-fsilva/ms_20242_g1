@@ -13,6 +13,9 @@ function Signup() {
     setIsProfileVisible(true);
     setIsCourseVisible(false);
   };
+  const handlepularClick = () => {
+    window.location.href = "/dashboard"; // Redireciona para a página /dashboard
+  };
 
   return (
     <div className="signup-container">
@@ -90,7 +93,7 @@ function Signup() {
       <div className="button-group">
         <button type="button">Escolher foto</button>
         <button type="button">Tirar foto</button>
-        <button type="button">Pular</button>
+        <button type="button"onClick={handlepularClick}>Pular</button>
       </div>
     </div>
   </div>

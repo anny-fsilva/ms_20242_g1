@@ -12,13 +12,17 @@ function Login() {
     setIsForgotPassword(false); // Fecha a tela de recuperação de senha
   };
 
+  const handleloginClick = () => {
+    window.location.href = "/dashboard"; // Redireciona para a página /dashboard
+  };
+
   return (
     <div className="login-container">
       {/* Tela de recuperação de senha sobre a tela de login */}
       {isForgotPassword && (
         <div className="forgot-password-overlay">
           <div className="forgot-password-box">
-            <span className="close-forgot-password" onClick={handleCloseForgotPassword}>×</span> {/* Ícone X */}
+            <span className="close-forgot-password" onClick={handleCloseForgotPassword}>×</span>
             <h2>RECUPERE SUA SENHA!</h2>
             <p>Informe o e-mail de cadastro e enviaremos as instruções para você recuperar sua senha :)</p>
             <form className="forgot-password-form">
@@ -60,7 +64,7 @@ function Login() {
             <a href="#forgot-password" className="forgot-password link-style" onClick={handleForgotPasswordClick}>Esqueceu a senha?</a>
           </div>
 
-          <button type="submit" className="login-button">Entrar</button>
+          <button type="button" className="login-button" onClick={handleloginClick}>Entrar</button>
         </form>
       </div>
 
