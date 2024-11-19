@@ -102,12 +102,12 @@ Render
 |4|Diagrama de sequência dos itens do backlog |22/10/2024|29/10/2024|Gabriel Rodrigues|Concluída|
 |4|Projeto de persistência dos itens do backlog 1 |22/10/2024|29/10/2024|Júlia Rodrigues e Leany Figueredo |Programada|
 |5|Implementação do item do backlog 1|29/10/2024|05/11/2024|Grupo 1|Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024||Programada|
-|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024||Programada|
-|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024||Programada|
-|6|Apresentação do Projeto|19/12/2024|26/12/2024|Grupo|Programada|
+|5|Projeto de Interfaces gráficas dos itens do backlog 2 e 3|29/10/2024|12/11/2024|Ana Luísa Gonçalves e Verônica Ribeiro|Concluída|
+|5|Projeto de persistência dos itens do backlog 2 e 3|29/10/2024|12/11/2024|Júlia Souza e Leany Figueredo|Programada|
+|5|Implementação dos item do backlog 2 e 3|29/10/2024|12/11/2024|Grupo 1|Programada|
+|5|Projeto de Interfaces gráficas do item do backlog 4 |12/11/2024|19/11/2024|Ana Luísa Gonçalves e Verônica Ribeiro|Concluída|
+|5|Projeto de persistência dos itens do backlog 4|12/11/2024|19/11/2024|Júlia Souza e Leany Figueredo|Programada|
+|5|Implementação dos item do backlog 4|12/11/2024|19/11/2024|Grupo 1|Programada|
+|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 1|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
