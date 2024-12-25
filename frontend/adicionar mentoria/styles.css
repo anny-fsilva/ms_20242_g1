@@ -1,0 +1,129 @@
+/* Fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo h1 {
+    font-family: 'Ovo', serif;
+    font-size: 24px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+header .icons img {
+    margin: 0 5px;
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-presencial, .btn-remota {
+    flex: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-presencial {
+    background-color: #ccc;
+}
+
+.btn-remota {
+    background-color: #28a745;
+}
+
+.btn-turno {
+    flex: 1;
+    color: black;
+    background-color: #eee;
+}
+
+.btn-turno.matutino {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-cancel {
+    background-color: #ddd;
+}
+
+.btn-save {
+    background-color: #007bff;
+    color: white;
+}
